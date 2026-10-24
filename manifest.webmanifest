@@ -1,1 +1,33 @@
-{"name":"Soundboard - Mesa de efeitos","short_name":"Soundboard","start_url":"./","display":"standalone","background_color":"#101722","theme_color":"#101722","lang":"pt-BR"}
+{
+  "id": "./",
+  "name": "Soundboard — Mesa de efeitos v1.3",
+  "short_name": "Soundboard",
+  "description": "Soundboard v1.3: mesa de efeitos com favoritos, biblioteca local e uso offline.",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#111318",
+  "theme_color": "#111318",
+  "icons": [
+    {
+      "src": "./assets/icons/app-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/app-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/app-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

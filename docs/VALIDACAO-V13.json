@@ -1,0 +1,391 @@
+{
+  "version": "1.3",
+  "protectedFilesCompared": 80,
+  "protectedFilesUnchanged": 75,
+  "intentionalChanges": [
+    "js/audio-library.js",
+    "audio-library.json",
+    "sons/agua-espirrando.mp3",
+    "sons/explosao.mp3",
+    "sons/passos.mp3"
+  ],
+  "externalAudioPending": [],
+  "audioFilesCompared": 71,
+  "audioFilesMatchingCurrentInventory": 71,
+  "audioFilesMatchingOriginalInventory": 68,
+  "userProvidedAudioFiles": [
+    "sons/passos.mp3",
+    "sons/explosao.mp3",
+    "sons/agua-espirrando.mp3"
+  ],
+  "originalMetadataAndLicenseEvidencePreserved": true,
+  "coreModulesUnchanged": true,
+  "effectIdsPreserved": 72,
+  "svgEffectsReplaced": 72,
+  "accentMasks": 72,
+  "xmlValid": 145,
+  "coreHashesVerified": 164,
+  "iconLicenseIncluded": true,
+  "icons": [
+    {
+      "slug": "campainha",
+      "sha256": "6dd585cb0fc1c18c7a54806e95d4d7f14ce3c9113a2287488dc9539540bbd3fc",
+      "previousSha256": "f7fdfeb5b83f192ebb685c2e67338a2a1c6a73f2f592785743d69f63d7649c7a"
+    },
+    {
+      "slug": "sino",
+      "sha256": "20a268caf8290052e3bf76db98313e6b7d441836b5efbca34824bb520dae3640",
+      "previousSha256": "66fc8a81d098ce072793c6324b633499ba2f0fa7d1a4f4dbc252b2cb148f9620"
+    },
+    {
+      "slug": "rebobinar",
+      "sha256": "703f5c7aba7765f1c01e73db0fc9664c990a71e51868f6ee986e3684202316e5",
+      "previousSha256": "644b339b18c9cc0f42448634a8bc219dd03cd6c4df62a213468a28ffdcec25aa"
+    },
+    {
+      "slug": "acertou",
+      "sha256": "11daac9c8227ccd6721267b9f0f4329f1eee98795c1fcb383e8baafe2ba1c210",
+      "previousSha256": "1f4b74c13a152ea8d42369bb4776bd5f77f52e9e40e86d4a74dd855a5d1d31c8"
+    },
+    {
+      "slug": "errou",
+      "sha256": "4e886dff59b27f288ef4048c051575e9331705bfd194ddc9aeaf758d416e8728",
+      "previousSha256": "04687384bf62e6936cdb2e20aec50916db54a4afa5b24a9aee8bafd7b3411b62"
+    },
+    {
+      "slug": "risadas",
+      "sha256": "2edcfe840946b6d78f5b40e75b0684ae1a84f797daa15b5c80d89f1baaf140ae",
+      "previousSha256": "8b35acf2b6c9ede22776012ecafedadcf2e87917b4800700c4f84d96c621feb9"
+    },
+    {
+      "slug": "aplausos",
+      "sha256": "4355e74e4de68b315fe0db7b519e44d592f00e39d2f99bf78ae68f5950098087",
+      "previousSha256": "4fef86159ab1c92dcad1c85436999a245e1635edfa721cb56468094e5606b244"
+    },
+    {
+      "slug": "vaia",
+      "sha256": "72e71a0eba52b74b260013fed0a9c6ecda97cd0029ba2cbef93f48a2a90cc3ac",
+      "previousSha256": "36a0d235a60feae323f22ff2f77fc464c3fc38061c0f8c5b125a79cfdc5f56e2"
+    },
+    {
+      "slug": "grilos",
+      "sha256": "5c4e606c34dce1c698542294894f5a5653ffa6fae2fe2414d352f8c8751007ff",
+      "previousSha256": "4df29f090c6284af7da96f4cf21699dad9d560854c7011043e92528a34a4d741"
+    },
+    {
+      "slug": "trombone-triste",
+      "sha256": "b9ea14df8c944e662de03759601a7263730c5a7f030177bb2d2738330fb24bb9",
+      "previousSha256": "69403dba75d68a60fb8e94f7b232fad64ac788d8094676fea50be4490f7e8a6f"
+    },
+    {
+      "slug": "censura-bip",
+      "sha256": "e19969fa18b4c4a23aabab12bc8cabea69cd9aada1ca944a4b2a1f95fc8decaf",
+      "previousSha256": "98dd91d3209b726cf2854fa68a9ab280fe7cbc09760f14a71db1433330860b76"
+    },
+    {
+      "slug": "record-scratch",
+      "sha256": "d452e2f3538f2e22337c1869ca28575cf67e57e0e9f4365911d1c8ce0892b41a",
+      "previousSha256": "4b2c89bbfefaa6bdb5eed155f5425649f24ec0dbaee3a7d924848bd0c3b9d7a9"
+    },
+    {
+      "slug": "rufar-de-tambores",
+      "sha256": "3487b4902f23606ee1369cb67f370d9aeabc96c73977942a64181c8dc35628ec",
+      "previousSha256": "6ad9ba86627c32f3ddaf13d8e5aabe2630e8e7b56dc8b63d91a6a0a1b508fda8"
+    },
+    {
+      "slug": "suspense",
+      "sha256": "7e19efa643c56d06ebe5dbd452e964a1d2c35cc0f67e10d296685ef42b9e9568",
+      "previousSha256": "c668bdc59e669a21d6c624239cfa232cf4e7541ee680c1f30c9fc9b133858174"
+    },
+    {
+      "slug": "revelacao",
+      "sha256": "369952e63aad30cc4c56866cf77ec3f91b3a19726bccbcb76bbd31aa4bef43b5",
+      "previousSha256": "3af82fbc1adc75ad33edb3b9aca7a603e84c5dba2856f23ef4a5cbdfbb375e4d"
+    },
+    {
+      "slug": "contagem-regressiva",
+      "sha256": "b20db52cefe8ae9fa009a95c46358749ff06ebd3f546e14cf3e437b88271cfaa",
+      "previousSha256": "684e9cb7ed78d95bd20649a5756e2c3ffb299b44bf4c145962dda9b591c638cf"
+    },
+    {
+      "slug": "telefone",
+      "sha256": "95a96d3ae96f16f5662fd48fc5f5992a07b6d6c8f211e8cc3444410daaae4e62",
+      "previousSha256": "b77825542cb81a5e76e55000a772cda7237005f0d62cd3a85e32633ce4befc07"
+    },
+    {
+      "slug": "desligar-telefone",
+      "sha256": "daf8ee01eb34ab2b0052fd08726f2bc7b4701d7d7baddaf998c8e61ee8bd9010",
+      "previousSha256": "33c336d32aefb93319cb2c24559e59607fa46c675af32bdff2a66a606dd61c1c"
+    },
+    {
+      "slug": "porta-abrindo",
+      "sha256": "cb7df9600844c7fe59bfbda40e70c2311916916837de9273be0d79bca98066fd",
+      "previousSha256": "03ec58094f5a25fb50ef766b8f60a561e76c33b5b967d60d91da413193ab25da"
+    },
+    {
+      "slug": "porta-fechando",
+      "sha256": "56ca8ce8d0fd8b7978646d078324d5a864088017f3acb0e40dd52ef222ecfee9",
+      "previousSha256": "507d1f0ad8b05412a97a018bcba9d1be288d5f066dd29fd6f3802bdef4ed5ecc"
+    },
+    {
+      "slug": "batidas-na-porta",
+      "sha256": "cbdbb5e481a8a386be20fbc36e107e49e1177a9acef97eff527d9780d0cfb0d4",
+      "previousSha256": "891c5541ed10b7e364d4fc3170a1f2c2e833705f9b412fb5c23d22b75a0b7f48"
+    },
+    {
+      "slug": "interruptor",
+      "sha256": "d49914e771410a29600ae9d8c336f30141c08b45243f4c8348bf340d42d11c5c",
+      "previousSha256": "b22fd9ff8eddad7824f53ab30edfc5737001002ecf046a247660aa6e9ba6892f"
+    },
+    {
+      "slug": "torneira-abrindo",
+      "sha256": "4d9de0a1cfb802cb1c11ae9bc1cce295f34838d1caefdb1678d2f71c64c55498",
+      "previousSha256": "83067a110be0c702253446a8baca50966df62cbcdc84e7bf6f82660a4fb90499"
+    },
+    {
+      "slug": "torneira-fechando",
+      "sha256": "9ea405ef49afce505cd0cc85911b33a1d9f4a52211827d2def76700fd80db858",
+      "previousSha256": "21335d5d23ab76d9480342d5d4248d2626546ed4d8985a4ce0e3362aebd576cf"
+    },
+    {
+      "slug": "descarga",
+      "sha256": "b0d6062cb87565164de75d2e3ab8b69e61415ea10fac05fca3e61134e76949d8",
+      "previousSha256": "b75f8354194317d69478a94ceda48242eb231edb818adfec214079033f348d27"
+    },
+    {
+      "slug": "vidro-quebrando",
+      "sha256": "bc82d66ceb57570dce0ce89cc79f4d3f0c9b06f6faf145bfa09cda6ed5bfda01",
+      "previousSha256": "e627ef8927bf68ac370acb7af6d3c34fd449a9525f6e09a8a4b981f6e9185d68"
+    },
+    {
+      "slug": "martelada",
+      "sha256": "d75530c66b9c218a94b776eb4d80db1b61839984b40df033d6e5d63cdd55adae",
+      "previousSha256": "b65c9777e1934d2c57b6e8a52c2aba8afba596952fc791a636932bd9db2831c9"
+    },
+    {
+      "slug": "objeto-caindo",
+      "sha256": "1f2f428e9a666055f921f0cb8ba7b62272d111e7d64ee6ace77bcf72016ab977",
+      "previousSha256": "1bd54729b5bb88f21ac49232ea80eb81aa641f332c0e0ec3565417d12c5ab8df"
+    },
+    {
+      "slug": "passos",
+      "sha256": "f8c6b8d59e1f074240e58fd8dfadd16cf713ab32251d8c69b5e46a07257feccf",
+      "previousSha256": "4867fa1e871811be3cfcb73f6216af91eb7f4701809aa1305ede501b113df3e5"
+    },
+    {
+      "slug": "chaves",
+      "sha256": "1ae6e7a82a0feed13a001729444b6262a5d77c94840ca35e80d040d8df8f8ba4",
+      "previousSha256": "78d3ed38ecf78e7ed8f8eb1edab3dc428c7adcb47205189afc897f9e990bcf13"
+    },
+    {
+      "slug": "pancada",
+      "sha256": "179c035bd6b3246f0fc0477ccd22f2ad12dec709fae91addeed1e3ee0509845f",
+      "previousSha256": "dd9001fff4b707f740352174dacb3495b7a074e9554f3239637b7bb462cd1552"
+    },
+    {
+      "slug": "soco-comico",
+      "sha256": "0a6131e5d44c01bd7c88314e2128f3914e3e5e4228e0b477d953db1d5e3e51e8",
+      "previousSha256": "1f1c6bf66029fdd28c952bc8003bd162c9929761f6405d5b13711a60d3fec1fb"
+    },
+    {
+      "slug": "madeira-quebrando",
+      "sha256": "eaa2406e43ed623caf6ced05c484fdb4678f306bd292c0eb48c70a51daf1271d",
+      "previousSha256": "c7860ccb09b255f51719cbf08f2ccca6369733dc8f243e41a716b755af9a9d3e"
+    },
+    {
+      "slug": "buzina",
+      "sha256": "d5fb58a038d7fc0240a8da9a412b8d243d3bb63d135f5115b1def6b9fbc76029",
+      "previousSha256": "3e05be229a33e2fd13690e09083ab92207e44168f57bc29c3b942cb95ff6a6a6"
+    },
+    {
+      "slug": "carro-arrancando",
+      "sha256": "2659a02e0f62b1365e7406b21d2dd94c47e04daa64c97dd555812b430d5e696b",
+      "previousSha256": "ba7dacdbc99a093144e16efb127adc6208b5da5659525fdc22cca131b6599e1f"
+    },
+    {
+      "slug": "freada",
+      "sha256": "703a459f295e60e4e7b75485b239cc6592de000beefa9b35dcc9b4bd7708291b",
+      "previousSha256": "cc05d22fb66b810c3f05d9f2d8c293050b8f1416bda99846fcb5409e529e1a5b"
+    },
+    {
+      "slug": "derrapagem",
+      "sha256": "982228720d8a68036059728df41bb9cc26ad6afcf152186969d8c5da89c19a29",
+      "previousSha256": "e99c99a06e28840cb025ff7f9ae37345e48e29d200c3991df07cdbcb0d3bddff"
+    },
+    {
+      "slug": "explosao",
+      "sha256": "c760e62a8126c6a8894adfbb3a8c1d5e19a91503328118e9b77e5b0929a656e3",
+      "previousSha256": "3c6511be24ebca610a579c7f0259adb345caac117cb025509c634295381bdc2e"
+    },
+    {
+      "slug": "choque-eletrico",
+      "sha256": "684efad5bc1f289cc80656125d46b3c683e9f38787cf711a1c1185bd7d0d71a7",
+      "previousSha256": "7f634715ed4f2b97d85e8ee859c8d3d6e4c7a58f44d3aa2a78f0958baed35bf2"
+    },
+    {
+      "slug": "mergulho",
+      "sha256": "bb1db7b7d06b789bb563982388f15699306d703b5ace9aa2f0bc64bd62134cf6",
+      "previousSha256": "e683ce24944ead6184fc2f94170500893a626b2e501884071aad4620b44f7174"
+    },
+    {
+      "slug": "agua-espirrando",
+      "sha256": "e9c6aa52edb92503be6e8170aba84a639e2b8acc28af795ca175cab920efb15d",
+      "previousSha256": "683c695e995bff1e8e9a423de0f2458061b546716894c056dd93673c890eef1e"
+    },
+    {
+      "slug": "queda-comica",
+      "sha256": "399b440dec3b213d5be0346bf661353704fc650b5ceb2810323dab307c12db84",
+      "previousSha256": "d46de59e74b6b94f36b832b4fd8dc0ecce8568a931cfb0962cd23f82c6ec4508"
+    },
+    {
+      "slug": "fogo",
+      "sha256": "5598f2a6f7f99e903c5a0dcbb8b0a26fe53f72971f324e6de9578218e9096c96",
+      "previousSha256": "df05f9c8c87bd1950cb12a4b5f57256792ad7a2d49031b3406215cd367e17481"
+    },
+    {
+      "slug": "floresta",
+      "sha256": "e345767a90bd1ef86ccf5ee052faca2c18e1a51974d1007caa078a8955f58c62",
+      "previousSha256": "19abb562625ffcddf4c043241573b6ae5b7fd2be34c9af88cae03bddc1b55df5"
+    },
+    {
+      "slug": "vento",
+      "sha256": "4143f4f0c359fa981b402ba4a2cf680ffc386c10b040841238752d490a674428",
+      "previousSha256": "6393d6fce32c97db8480734b0d2ac587164a1412185c4d2f6e62ff0c16a9c1c9"
+    },
+    {
+      "slug": "chuva",
+      "sha256": "f9e200844b1a344a5aa91fff032206721f0cf1a54cf4aeb3ce1e4efe1c78119e",
+      "previousSha256": "6aad7db7407dd83be1f52a5de52279bb29516c7d0ab9e084821330dd8b74b0e1"
+    },
+    {
+      "slug": "tempestade",
+      "sha256": "ba709847fc0f718b411a5927d6d3fbb2ce01d61ce8f16325f1d18045fb31819e",
+      "previousSha256": "70f791ab87c9d328b6c68f3deedc3c7b0cb4c4afbb8b6e6c99318d3782ef789f"
+    },
+    {
+      "slug": "escritorio",
+      "sha256": "ec6114b0786c0e08b008145c11ca4c33be16d88143db4c60c436e6744e2b0882",
+      "previousSha256": "903b115ea1e0920b1cf669a93efd8f5c82677f0d0edc70d8ca33827aca8cb487"
+    },
+    {
+      "slug": "escola",
+      "sha256": "099d64732d8db281dda5c73b9cfdff5d92bfd4fffd2204370f58240eb3b8c72f",
+      "previousSha256": "613ad453e284fc47b3e83988bb8c437e12814c16df6666c65bd21d001b6971f5"
+    },
+    {
+      "slug": "restaurante",
+      "sha256": "afe97bcf138b26781017b7fb5eb12d5a7320f7320e8d1fe9987c06dd822d8866",
+      "previousSha256": "bbe8345c5d391b32fceb61909e129ba8df00ba133a7699087ad8dc4df8054d09"
+    },
+    {
+      "slug": "transito",
+      "sha256": "51ab39e6142074c1b1bf9243633d7241f8efa1c5cbf6b5de2b2bdb1d713dbdea",
+      "previousSha256": "771083d3f2bda0eb7e18b6b3c1da4236b6a9d95835efea053eea4f166d14d33e"
+    },
+    {
+      "slug": "praia",
+      "sha256": "e987fa924b55489b524fc2621ddb316c50021afea093801564c60cce5d41f739",
+      "previousSha256": "49a81cb7b2715c7561ee970a05a2ebaee6753bc8cbb80563ce87db56162ab1ad"
+    },
+    {
+      "slug": "multidao",
+      "sha256": "dc9d489868f44992a08b770830b49c6a42efaf0cb1446f7b1e661172ad889981",
+      "previousSha256": "b50b115b5c88b1f35709aea77512ad138e8ac7e90a35535b657873f7a81e4a9a"
+    },
+    {
+      "slug": "terror",
+      "sha256": "9bbe3de2e3c80a360fedc3214f9663fb10aab88688bd9ea39ab98c5ebc441d7b",
+      "previousSha256": "3ecad4e78eec5ab28affbf3d5b698464566fbde24d5670fd6467166fe4b5c3e1"
+    },
+    {
+      "slug": "sinal-escolar",
+      "sha256": "a653c499b37b38dd493a9b6a87d1487e4fc89744defdb8d225305c0e92b7ab8b",
+      "previousSha256": "b581823dee961fc539b17d6529a2fc6d35d3d1d211afe83075d462ee02334b88"
+    },
+    {
+      "slug": "criancas-conversando",
+      "sha256": "92931a10ac5feb16c7bf1c4e38e69e6eeb90a7b5c4ebcee57eabc0fe8dd0a2d3",
+      "previousSha256": "a1191dd3c25414ca9b34873ef415897670215df420ca8c3e438fd943f9bad8c2"
+    },
+    {
+      "slug": "giz-no-quadro",
+      "sha256": "7c07d8f74d0a527f807ca2470d9d6ff10c527b8a1d28731095d90364c092f1c9",
+      "previousSha256": "905c0f9d59078bce16854e1b8c07e4f9247c206a4bc9811944ba939a246ff1a3"
+    },
+    {
+      "slug": "relogio",
+      "sha256": "50a84c441fee474ac34c2a870d47dd44c49792a891bd3690888751a73413a290",
+      "previousSha256": "eb43feb93e9fb011b5c96618dc70f92cf77f3b129210e6932939ea648c11c9bc"
+    },
+    {
+      "slug": "sirene",
+      "sha256": "039df9009e78cb4341a8f89ffacffdc04125011f0ff5c24442e70ca86a654633",
+      "previousSha256": "f50dea63232cbea118fbe071cab3c9f847a87ab7873ddbbe1efe4e71ce0570eb"
+    },
+    {
+      "slug": "musica-de-escolinha",
+      "sha256": "2ea7f9feb9cdb8040970f187c0bba9f6b500619b624dd4721a889e944316a92c",
+      "previousSha256": "2892fb19f547f18a506faa243052ae1bc6eb9d737abd897991d19c73c6b97225"
+    },
+    {
+      "slug": "musica-de-elevador",
+      "sha256": "a741ebd2d330c2ab470b48a6701e66e9d8e6e13183b5a05bfb4f8e78ef0eba11",
+      "previousSha256": "66b4292c314f2e5865159042804af1823460536a2b88638ea5b260f8f1d95ab9"
+    },
+    {
+      "slug": "musica-romantica",
+      "sha256": "0e4d31031351a47d615bee1a32e1d6542188c6a64d378fcf83624fa300a3be9f",
+      "previousSha256": "fafa68b02e4376e2c2d6de44330f5e593e7db02e24ac62f301d9d469e733ea1c"
+    },
+    {
+      "slug": "vitoria",
+      "sha256": "167d4c2a43ebfc8e9eaa5d433029adef46ade4374978a6c7d4987238cbbef001",
+      "previousSha256": "74f52e1cfc782cf1b3e7d92a73f8531233e8b60f1e5b068b3de3f85e75fc8b19"
+    },
+    {
+      "slug": "derrota",
+      "sha256": "1ef962921bd489b298241ef2c0acf89135f5bb3151c6c7d507a8e03615ee6b5f",
+      "previousSha256": "5d57a4e499ed07b689b45a01360bf4951b60d937025185f014ca8c3d368784d1"
+    },
+    {
+      "slug": "perseguicao",
+      "sha256": "7cf15dcb96d7c93c8d5fadb960ca4169e2bf0a726fa3b9ffc218f13c94de14a6",
+      "previousSha256": "c133da077215c8605753875ff32b7ee55e63045292c11b356a81bfe83ba573a5"
+    },
+    {
+      "slug": "misterio",
+      "sha256": "3884548fd703471ae390ca8be5aecbf46228578f2f1f5ecc18938a500e988db8",
+      "previousSha256": "610f014f61678142e7b0a6ae010cd81af45198c84b64c987b07bcaa878e83f4f"
+    },
+    {
+      "slug": "abertura-de-programa",
+      "sha256": "90c70217f3916fe95c2e1436374e7bd830faf2f6a33a245dad5191daa1b9b215",
+      "previousSha256": "e7582ff947b0fc6e0412cb9cbf2192b71832ffd09dfcb1e21f9c1835a89d5ad6"
+    },
+    {
+      "slug": "encerramento",
+      "sha256": "8369c9914f5fb8cfd6ce5c0b16e8d3b61fe5ca05f8ca2398e89a819816ac52ec",
+      "previousSha256": "410a8deb6408915750b10467934849a706bef0bd8951fcf55306dbee8c5564a5"
+    },
+    {
+      "slug": "transicao-comica",
+      "sha256": "93b6e1076cba3f6005c7ac37c9ea3e74847b65a8d8af1cc490d4bbb7c45f20cb",
+      "previousSha256": "8d7176e3092564c86bb400436298f006c364c75a7f90f2c4615d9aac5e94f6e0"
+    },
+    {
+      "slug": "tensao-dramatica",
+      "sha256": "825e69f550565a2bc460b480a99d8f7d26ae56a22bbeb0d34d67810966e57d03",
+      "previousSha256": "9a7718b0b7d854efe52baee4e47ab927dbc66adbe59f1107be4f2b01b51185b3"
+    },
+    {
+      "slug": "momento-epico",
+      "sha256": "7d1e405e671ea3e9a6f3ac7968b4d75161c9cc823f650030c973d23dc94c6f68",
+      "previousSha256": "bebcedd35c62af454f7be6ecc7af910b78b3a240a1c0d6fc6bca024f2d0843b2"
+    },
+    {
+      "slug": "silencio-dramatico",
+      "sha256": "e99ed90c03db5c1914fe2d47608daee01677bb94c2c2653bb67f96d29621e1a2",
+      "previousSha256": "d204893fcadf204158108b255f6f16dcd156ebfe2baa4d84091ede28f826b9fe"
+    }
+  ]
+}

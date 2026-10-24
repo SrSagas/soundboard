@@ -1,0 +1,65 @@
+[
+  {
+    "effect": "risadas",
+    "source": "https://github.com/phosphor-icons/core",
+    "download": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/duotone/mask-happy-duotone.svg",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/LICENSE",
+    "date": "2026-10-24",
+    "originalSha256": "3d568039414fd5093bcfccc6c6bb3aa995622933fc6e1aba7a77736dfea72058"
+  },
+  {
+    "effect": "aplausos",
+    "source": "https://github.com/phosphor-icons/core",
+    "download": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/duotone/hands-clapping-duotone.svg",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/LICENSE",
+    "date": "2026-10-24",
+    "originalSha256": "ec06f6fd5f5b8800cf1e12961259ad81ae1693712759c978cc66c3e35bb9c9ee"
+  },
+  {
+    "effect": "vaia",
+    "source": "https://github.com/phosphor-icons/core",
+    "download": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/duotone/thumbs-down-duotone.svg",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/LICENSE",
+    "date": "2026-10-24",
+    "originalSha256": "e176d105980b6dc0429946713b8154c57a2eb71c1f6dcdeda979b0cffa6d0679"
+  },
+  {
+    "effect": "soco-comico",
+    "source": "https://github.com/phosphor-icons/core",
+    "download": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/duotone/hand-fist-duotone.svg",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/LICENSE",
+    "date": "2026-10-24",
+    "originalSha256": "92c29ffeb09b209fc4d1ca65690da2ca87a180a0997ee72026ae99ccabbd006b"
+  },
+  {
+    "effect": "mergulho",
+    "source": "https://github.com/phosphor-icons/core",
+    "download": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/duotone/person-simple-swim-duotone.svg",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/LICENSE",
+    "date": "2026-10-24",
+    "originalSha256": "59f28be703de3fd78d6583bf14e247997740daf68f581b7986758dc0ccdc7857"
+  },
+  {
+    "effect": "terror",
+    "source": "https://github.com/phosphor-icons/core",
+    "download": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/duotone/skull-duotone.svg",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/LICENSE",
+    "date": "2026-10-24",
+    "originalSha256": "7bc1680496a8815dabef9ad3e7ec24f0668c91ad861b5303403322457e0268f8"
+  },
+  {
+    "effect": "perseguicao",
+    "source": "https://github.com/phosphor-icons/core",
+    "download": "https://raw.githubusercontent.com/phosphor-icons/core/main/assets/duotone/person-simple-run-duotone.svg",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/phosphor-icons/core/main/LICENSE",
+    "date": "2026-10-24",
+    "originalSha256": "b14afd7b024b5a1cfc142aa9a2506bcc1a6e3f47dc328077bbad2172bb825041"
+  }
+]

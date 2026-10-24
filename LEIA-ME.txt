@@ -1,10 +1,74 @@
-SOUNDBOARD v1.0 — DEMONSTRAÇÃO
+SOUNDBOARD V1.3 — MESA DE EFEITOS
+Atualização visual de 24/10/2026
 
-1. Abra index.html no computador para experimentar. Para instalar como aplicativo e trabalhar offline, publique a pasta inteira em HTTPS (por exemplo, GitHub Pages) e abra pelo celular uma primeira vez conectado à internet.
-2. Os seis sons .wav são demonstrações SINTÉTICAS criadas para este protótipo. Eles não são gravações de eventos reais.
-3. Os outros 66 sons possuem botões cadastrados, mas requerem arquivos MP3 próprios. Coloque os arquivos dentro de sons/ com os nomes derivados dos rótulos em minúsculas, sem acento, separados por hífens: por exemplo, porta-abrindo.mp3 e vidro-quebrando.mp3.
-4. Após adicionar MP3s, altere a constante VERSION em sw.js para invalidar o cache antigo. Reabra o site conectado à internet para armazenar os novos arquivos. Sons baixados durante a utilização também ficam em cache; para garantir todos offline, abra os efeitos enquanto houver conexão e confirme seu funcionamento no modo avião.
-5. Para saída externa, conecte o fone ou a caixa Bluetooth no sistema operacional antes de abrir a página. O painel utiliza a saída padrão do sistema. Mudar a saída durante a reprodução depende do dispositivo e navegador.
-6. O volume inicial é 55%, com máximo de 80% do ganho da aplicação. O compressor ajuda a reduzir picos digitais, mas não evita volume excessivo da caixa e não nivela automaticamente arquivos de áudio de origens diferentes. Faça teste prévio em volume baixo.
-7. No celular, mantenha a tela acesa: o projeto interrompe o som quando a página fica oculta para evitar efeitos acidentais.
-8. Para cópias definitivas, verifique autoria, licença e permissão de redistribuição de cada áudio. Não inclua bibliotecas de músicas comerciais em repositório público.
+Interface profissional escura e dessaturada, com transporte compacto e 72 ícones
+com contorno e segunda cor discreta. A biblioteca mantém 72 cadastros,
+71 MP3 reais e a ação Silêncio dramático, com substituições feitas pelo usuário.
+
+NAVEGAÇÃO
+- Favoritos: seus efeitos de acesso imediato. Um toque reproduz; outro no mesmo
+  cartão para. Outro efeito troca o som. PARAR também cancela carregamentos.
+- Todos os efeitos: catálogo com pesquisa e categoria. No celular, são três colunas
+  a partir de 360 px e duas em telas menores. Os cartões mantêm as dimensões ao tocar.
+- Biblioteca: Adicionar som, Editar efeitos, reordenação dos favoritos, backups,
+  importação, espaço local, instalação PWA, uso offline e créditos.
+- Para editar: Biblioteca > Editar efeitos > cartão. Escolha um novo arquivo para
+  substituir o áudio; o ID é preservado. Concluir edição volta à reprodução.
+- O volume e Testar áudio ficam na barra compacta. A saída é escolhida pelo sistema.
+
+CORES E ÍCONES
+- 72 SVGs na grade 24x24 com contorno e detalhe em segunda cor discreta.
+  28 bases Lucide, 7 Phosphor e 37 próprias/adaptadas. Licenças integrais locais:
+  docs/licencas/ICONES-V13.txt e PHOSPHOR.txt. Matriz e folha: docs/ICONES-V13.md/PNG.
+- O padrão oferece a paleta do sistema. Cores escolhidas pelo usuário continuam
+  salvas. Tons pouco legíveis recebem ajuste apenas na exibição do ícone.
+- SVG importado continua validado e exibido como imagem isolada, nunca como HTML.
+
+PRESERVAÇÃO
+- Os MP3 atuais não foram recodificados. Passos, Explosão e Água espirrando usam
+  os arquivos substituídos pelo usuário, que declarou possuir licença de uso.
+  Os demais 68 continuam idênticos (56 CC0 e 12 CC BY 4.0).
+  Histórico de fontes/licenças preservado; inventário atual: audio-library.json.
+  Detalhes e procedimento para novas trocas: docs/SUBSTITUICOES-AUDIO.md.
+- Núcleo de reprodução, compressor, volume, IndexedDB, migração, backups com áudio,
+  validações e gerência offline permanecem intactos. Nenhum banco foi apagado.
+- Sons particulares continuam somente no navegador, sem publicação automática.
+- sino-demo.wav já estava ausente antes da v1.2; nada foi fabricado com esse nome.
+
+OFFLINE E ATUALIZAÇÃO
+- Abra por HTTPS ou servidor local (não por file://).
+- Biblioteca > Preparar uso offline: aguarde 71/71. Confira sem internet antes de usar.
+- O cache da interface possui novo hash; o contêiner de mídia existente é reutilizado.
+  Atualizar agora ativa a nova interface e recarrega sem apagar IndexedDB.
+- Fechar todas as abas e reabrir também permite ativar uma versão aguardando.
+  Não limpe dados do site para atualizar, pois isso remove seus arquivos particulares.
+- Android: instalar pelo menu/botão disponível na Biblioteca. iPhone: Compartilhar >
+  Adicionar à Tela de Início. Instalar não substitui a conferência dos áudios offline.
+
+PUBLICAÇÃO
+- Nenhum deploy foi realizado. O projeto é editado diretamente nesta pasta,
+  sem geração de ZIP. Envie ao GitHub os arquivos do site indicados em
+  docs/PUBLICACAO.md. A pasta work/ fica no computador e já consta na .gitignore.
+- Prefira Git ou GitHub Desktop para preservar as pastas e ignorar work/.
+  No navegador, envie até 100 arquivos por vez; assets/ exige duas remessas.
+- GitHub Pages: Settings > Pages > Deploy from a branch > branch > /(root).
+  Preserve os caminhos relativos e todos os créditos. Detalhes: docs/PUBLICACAO.md.
+- Após trocar MP3 manualmente em sons/, mantendo os nomes, execute:
+  python work/sync-audio.py
+  python work/cache-v13.py
+- Para alterações futuras de interface, execute python work/cache-v13.py; não é
+  necessário instalar frameworks, runtime de ícones, CDN ou ferramenta de build.
+
+VALIDAÇÃO E LIMITAÇÕES
+- Testes Node, testes de interface/responsividade e fluxos Chrome completos foram
+  executados. O inventário e cache correspondem aos MP3 atuais; o núcleo funcional
+  protegido mantém os hashes originais.
+- Não foi testado Safari/iOS físico, Chrome Android físico nem áudio em fones/Bluetooth.
+  Emulação de tela/toque não equivale a teste em aparelho real.
+- A escuta perceptual dos 71 áudios e a fluidez auditiva dos loops permanecem pendentes
+  desde a curadoria v1.2; esta atualização não altera nem recertifica os sons.
+- Bluetooth pode adicionar latência. O aplicativo não altera o volume físico.
+
+Revisão dos rostos, mãos e cores: docs/REFINAMENTO-ICONES.md.
+Relatório da atualização original: docs/RELATORIO-V13.md.
+Baseline preservado em work/v13-baseline/; inventário sonoro em audio-library.json.

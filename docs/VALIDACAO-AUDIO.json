@@ -1,0 +1,655 @@
+{
+  "date": "2026-10-24",
+  "records": 72,
+  "realAudioFiles": 71,
+  "independentlyDecoded": 71,
+  "clippedSamples": 0,
+  "maxSamplePeakDbfs": -3.377,
+  "uniqueAudioHashes": 71,
+  "downloadPending": [],
+  "perceptualListeningPending": 71,
+  "physicalAudioTest": false,
+  "sinoDemoAbsentInitially": true,
+  "sinoDemoFabricated": false,
+  "files": [
+    {
+      "id": "builtin:campainha",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 162597,
+      "samplePeakDbfs": -5.929,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:sino",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 291942,
+      "samplePeakDbfs": -5.986,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:rebobinar",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 343980,
+      "samplePeakDbfs": -10.107,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:acertou",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 167580,
+      "samplePeakDbfs": -8.961,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:errou",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 60506,
+      "samplePeakDbfs": -13.604,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:risadas",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 264600,
+      "samplePeakDbfs": -7.976,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:aplausos",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 529200,
+      "samplePeakDbfs": -8.135,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:vaia",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 396900,
+      "samplePeakDbfs": -12.637,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:grilos",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 249764,
+      "samplePeakDbfs": -14.036,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:trombone-triste",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 429798,
+      "samplePeakDbfs": -9.026,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:censura-bip",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 30880,
+      "samplePeakDbfs": -20.9,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:record-scratch",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 62534,
+      "samplePeakDbfs": -8.624,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:rufar-de-tambores",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 409072,
+      "samplePeakDbfs": -6.888,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:suspense",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 396720,
+      "samplePeakDbfs": -10.553,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:revelacao",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 361884,
+      "samplePeakDbfs": -8.527,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:contagem-regressiva",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 751376,
+      "samplePeakDbfs": -8.835,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:telefone",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 254986,
+      "samplePeakDbfs": -10.775,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:desligar-telefone",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 37044,
+      "samplePeakDbfs": -5.607,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:porta-abrindo",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 59667,
+      "samplePeakDbfs": -6.128,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:porta-fechando",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 67914,
+      "samplePeakDbfs": -5.897,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:batidas-na-porta",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 97020,
+      "samplePeakDbfs": -6.001,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:interruptor",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 14200,
+      "samplePeakDbfs": -9.041,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:torneira-abrindo",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 109456,
+      "samplePeakDbfs": -9.003,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:torneira-fechando",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 196510,
+      "samplePeakDbfs": -10.167,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:descarga",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 1012360,
+      "samplePeakDbfs": -8.993,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:vidro-quebrando",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 188024,
+      "samplePeakDbfs": -7.945,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:martelada",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 39426,
+      "samplePeakDbfs": -7.842,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:objeto-caindo",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 85342,
+      "samplePeakDbfs": -5.751,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:passos",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 356212,
+      "samplePeakDbfs": -6.995,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:chaves",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 268834,
+      "samplePeakDbfs": -10.09,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:pancada",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 71352,
+      "samplePeakDbfs": -6.094,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:soco-comico",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 60858,
+      "samplePeakDbfs": -5.468,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:madeira-quebrando",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 97902,
+      "samplePeakDbfs": -5.511,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:buzina",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 141120,
+      "samplePeakDbfs": -9.979,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:carro-arrancando",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 595350,
+      "samplePeakDbfs": -9.653,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:freada",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 47408,
+      "samplePeakDbfs": -9.593,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:derrapagem",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 97329,
+      "samplePeakDbfs": -9.003,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:explosao",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 92506,
+      "samplePeakDbfs": -6.067,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:choque-eletrico",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 246960,
+      "samplePeakDbfs": -10.042,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:mergulho",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 291060,
+      "samplePeakDbfs": -8.068,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:agua-espirrando",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 69214,
+      "samplePeakDbfs": -5.835,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:queda-comica",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 179806,
+      "samplePeakDbfs": -19.036,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:fogo",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 2756250,
+      "samplePeakDbfs": -3.757,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:floresta",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 1697850,
+      "samplePeakDbfs": -3.377,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:vento",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 2756250,
+      "samplePeakDbfs": -8.944,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:chuva",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 2138850,
+      "samplePeakDbfs": -3.618,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:tempestade",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 1433250,
+      "samplePeakDbfs": -7.335,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:escritorio",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 2756250,
+      "samplePeakDbfs": -3.453,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:escola",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 2756250,
+      "samplePeakDbfs": -6.0,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:restaurante",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 2756250,
+      "samplePeakDbfs": -5.919,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:transito",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 2668126,
+      "samplePeakDbfs": -4.076,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:praia",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 2756250,
+      "samplePeakDbfs": -9.002,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:multidao",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 2756250,
+      "samplePeakDbfs": -9.826,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:terror",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 2756250,
+      "samplePeakDbfs": -7.992,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:sinal-escolar",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 649472,
+      "samplePeakDbfs": -12.401,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:criancas-conversando",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 2579850,
+      "samplePeakDbfs": -7.501,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:giz-no-quadro",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 1654192,
+      "samplePeakDbfs": -3.456,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:relogio",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 428278,
+      "samplePeakDbfs": -3.546,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:sirene",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 2323248,
+      "samplePeakDbfs": -4.27,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:musica-de-escolinha",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 2645560,
+      "samplePeakDbfs": -5.182,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:musica-de-elevador",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 2619100,
+      "samplePeakDbfs": -3.41,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:musica-romantica",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 2604106,
+      "samplePeakDbfs": -3.449,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:vitoria",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 1587600,
+      "samplePeakDbfs": -11.596,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:derrota",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 1745038,
+      "samplePeakDbfs": -3.961,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:perseguicao",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 2575966,
+      "samplePeakDbfs": -6.678,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:misterio",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 1415944,
+      "samplePeakDbfs": -4.192,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:abertura-de-programa",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 1699192,
+      "samplePeakDbfs": -7.573,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:encerramento",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 2646000,
+      "samplePeakDbfs": -3.411,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:transicao-comica",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 398152,
+      "samplePeakDbfs": -11.362,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:tensao-dramatica",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 1610056,
+      "samplePeakDbfs": -6.207,
+      "clippedSamples": 0
+    },
+    {
+      "id": "builtin:momento-epico",
+      "sha256Verified": true,
+      "decodePassed": true,
+      "licenseEvidencePresent": true,
+      "samples": 2564446,
+      "samplePeakDbfs": -7.325,
+      "clippedSamples": 0
+    }
+  ]
+}

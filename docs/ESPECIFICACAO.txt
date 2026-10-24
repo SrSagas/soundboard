@@ -1,0 +1,1059 @@
+# CODEX — SOUNDBOARD V1.2 — IMPLEMENTAÇÃO COMPLETA
+
+## 1. PAPEL E OBJETIVO
+
+Atue como Arquiteto de Software Sênior, Desenvolvedor Frontend, Designer UI/UX e responsável pela curadoria técnica de uma biblioteca de efeitos sonoros.
+
+**Diretório autorizado:**
+
+`C:\Users\vitor\Downloads\soundboard-v1.1`
+
+O projeto existente já foi desenvolvido e extraído nesse diretório. Sua tarefa é inspecionar, corrigir, aperfeiçoar e completar essa implementação, preservando as funcionalidades existentes que estiverem corretas.
+
+**Objetivo final:** entregar uma mesa de efeitos sonoros profissional, denominada Soundboard, desenvolvida com HTML, CSS e JavaScript, especialmente otimizada para celulares, com aproximadamente 72 efeitos reais de alta qualidade, ícones SVG distintos e personalizados, gerenciamento de biblioteca, utilização offline e reprodução confiável por alto-falante, fones e caixas Bluetooth.
+
+O usuário utilizará o painel durante apresentações, improvisações e dinâmicas de humor. Portanto, a velocidade de identificação e acionamento é uma exigência funcional central.
+
+Não apresente apenas um plano ou recomendações. **Execute as alterações necessárias, realize os downloads permitidos e entregue o projeto atualizado.**
+
+Não modifique arquivos fora do diretório autorizado.
+
+---
+
+## 2. DIRETRIZES OBRIGATÓRIAS
+
+1. Inspecione integralmente a estrutura atual antes de modificar qualquer arquivo.
+2. Preserve a arquitetura existente sempre que tecnicamente adequada.
+3. Reutilize os recursos já implementados que funcionem corretamente.
+4. Corrija defeitos estruturais identificados durante a análise.
+5. Não introduza frameworks ou dependências desnecessárias.
+6. Priorize HTML5, CSS3, JavaScript nativo, Web Audio API, IndexedDB e Service Worker.
+7. Garanta compatibilidade com navegadores móveis modernos, especialmente Chrome no Android e Safari no iOS.
+8. Preserve o funcionamento no desktop.
+9. Utilize caminhos relativos compatíveis com GitHub Pages e subdiretórios.
+10. Não incorpore dependências de CDN para componentes essenciais.
+11. Não utilize APIs pagas, serviços comerciais ou credenciais sem autorização.
+12. Não introduza backend, banco de dados remoto ou autenticação.
+13. Não invente resultados de testes, downloads, validações ou licenciamento.
+14. Não crie arquivos substitutos com áudio artificial para encobrir downloads malsucedidos.
+15. Preserve todos os áudios personalizados existentes e suas associações.
+16. Não remova recursos funcionais sem necessidade técnica demonstrável.
+17. Toda a interface pública deverá estar em português brasileiro.
+18. Priorize desempenho, segurança, acessibilidade, responsividade e facilidade de manutenção.
+
+A aplicação deverá funcionar como site estático e poderá ser publicada no GitHub Pages.
+
+Não realize deploy, publicação, criação de repositório remoto ou alteração de infraestrutura externa.
+
+---
+
+# 3. AUDITORIA INICIAL OBRIGATÓRIA
+
+Antes de implementar, analise o projeto existente.
+
+Identifique:
+
+- Estrutura dos arquivos e diretórios.
+- Organização do HTML, CSS e JavaScript.
+- Cadastro atual dos efeitos.
+- Associação entre efeitos e arquivos de áudio.
+- Ícones utilizados.
+- Categorias disponíveis.
+- Sistema de favoritos.
+- Sistema de importação de áudio.
+- Armazenamento IndexedDB.
+- Exportação e importação da biblioteca.
+- Funcionamento da reprodução.
+- Controle de volume.
+- Compressor de áudio.
+- Service Worker.
+- Manifesto PWA.
+- Estratégia de cache.
+- Tratamento de arquivos ausentes.
+- Compatibilidade com GitHub Pages.
+
+**Importante:** existe um arquivo denominado `sino-demo.wav` que já foi utilizado com sucesso no celular.
+
+Localize esse arquivo e preserve-o.
+
+Não substitua esse áudio automaticamente por outro de qualidade inferior.
+
+Caso ele não esteja presente no diretório, registre a ausência e não invente um arquivo substituto.
+
+Caso o projeto utilize uma lista de 72 efeitos com arquivos ainda inexistentes, mantenha os identificadores e os vínculos corretamente, preenchendo-os conforme os downloads forem concluídos.
+
+---
+
+# 4. BIBLIOTECA DE EFEITOS SONOROS
+
+## 4.1. Objetivo da curadoria
+
+Localizar, baixar, verificar, preparar e integrar arquivos reais de efeitos sonoros de excelente qualidade.
+
+Os áudios precisam ser convincentes, agradáveis de utilizar e adequados a apresentações de humor.
+
+Não basta que um arquivo tenha o nome correto: seu conteúdo deve representar claramente o efeito pretendido.
+
+Exemplos:
+
+- Campainha: campainha claramente reconhecível, com início imediato.
+- Sino: toque metálico limpo e característico.
+- Vidro quebrando: estilhaçamento realista.
+- Rebobinar: efeito rápido e marcante de fita ou mídia retrocedendo.
+- Pancada: impacto forte e cômico.
+- Telefone: toque de telefone clássico facilmente reconhecível.
+- Fogo: crepitação realista, com repetição contínua agradável.
+- Escritório: ambiente convincente de escritório ocupado.
+- Risadas: risada de plateia ou reação humorística reconhecível.
+
+**Não gere sons sintéticos genéricos por programação para substituir gravações reais.**
+
+Não use arquivos vazios, ruído aleatório, bipes simplificados ou sons artificiais improvisados para simular a conclusão da biblioteca.
+
+## 4.2. Fontes permitidas
+
+Utilize pesquisa na internet, navegador e ferramentas de download disponíveis para localizar gravações.
+
+Priorize:
+
+- Wikimedia Commons.
+- Freesound, selecionando licenças compatíveis.
+- Bibliotecas de áudio CC0.
+- Acervos de domínio público com situação jurídica verificável.
+- Outras fontes que autorizem expressamente a redistribuição dos arquivos como parte de uma biblioteca de efeitos sonoros.
+
+Atenção: o fato de um áudio estar disponível gratuitamente para download não significa que ele possa ser redistribuído em um site ou pacote de arquivos.
+
+Não presuma que todos os arquivos do Pixabay, Mixkit ou Freesound possuam a mesma licença.
+
+Não use áudio identificado apenas como Creative Commons sem verificar a modalidade específica.
+
+Prefira CC0 ou domínio público comprovado.
+
+Outras licenças somente poderão ser utilizadas quando suas condições forem compatíveis com a distribuição pretendida e puderem ser integralmente cumpridas.
+
+Licenças que exigem atribuição devem ter seus requisitos cumpridos, inclusive créditos acessíveis ao usuário quando aplicável.
+
+Se houver restrições que impeçam o uso como biblioteca redistribuível, não inclua o arquivo.
+
+Não contorne proteções de download, paywalls, sistemas de autenticação ou medidas técnicas de proteção.
+
+Não baixe conteúdos de fontes não autorizadas.
+
+Não considere domínio público uma gravação apenas por ser antiga, popular ou facilmente encontrada na internet.
+
+## 4.3. Política de qualidade
+
+Para cada efeito:
+
+1. Localize candidatos apropriados.
+2. Confira a licença e a origem.
+3. Baixe o arquivo autorizado.
+4. Verifique se o arquivo é realmente um áudio válido.
+5. Identifique duração, formato e características relevantes.
+6. Escute ou realize verificação perceptual quando houver ferramenta adequada.
+7. Elimine silêncio inicial excessivo.
+8. Preserve o ataque natural do efeito.
+9. Remova trechos desnecessários.
+10. Normalize a intensidade percebida.
+11. Controle picos sem destruir a dinâmica.
+12. Remova clipping quando viável sem comprometer a qualidade.
+13. Converta para um formato amplamente compatível.
+14. Defina corretamente se o efeito deve ou não repetir.
+15. Confirme que o arquivo está associado ao botão correto.
+
+Não aplique normalização indiscriminada que faça ambientes suaves soarem tão agressivos quanto explosões ou pancadas.
+
+O objetivo é consistência perceptiva apropriada à função de cada efeito, não nivelar artificialmente todos os sons no mesmo volume.
+
+Para efeitos pontuais, utilize arquivos compactos e de reprodução rápida.
+
+Para ambientes, preserve duração suficiente e transições naturais.
+
+Se necessário, produza uma edição contínua com loop sem estalos, cortes ou mudanças bruscas de nível.
+
+## 4.4. Formatos e organização
+
+Preferir MP3 como formato final quando adequado, com qualidade suficiente para evitar artefatos audíveis.
+
+Manter arquivos WAV quando houver justificativa técnica.
+
+Não converter um áudio já degradado para um bitrate maior alegando melhoria da qualidade original.
+
+Utilize nomes de arquivos previsíveis, sem espaços ou caracteres especiais, por exemplo:
+
+`campainha.mp3`
+
+`sino.mp3`
+
+`rebobinar.mp3`
+
+`telefone.mp3`
+
+`fogo.mp3`
+
+`ratinho-uepa.mp3`
+
+Crie uma estrutura coerente dentro da pasta do projeto.
+
+O catálogo deverá apontar para arquivos reais e existentes.
+
+Não deixe caminhos absolutos do Windows no HTML ou JavaScript.
+
+---
+
+# 5. RELAÇÃO COMPLETA DE EFEITOS
+
+A biblioteca inicial deverá conter os seguintes 72 efeitos, organizados em seis categorias.
+
+Preserve os identificadores já existentes quando possível, evitando quebrar configurações e favoritos.
+
+## 5.1. Dinâmicas e humor — 16 efeitos
+
+1. Campainha
+2. Sino
+3. Rebobinar
+4. Acertou
+5. Errou
+6. Risadas
+7. Aplausos
+8. Vaia
+9. Grilos
+10. Trombone triste
+11. Censura (bip)
+12. Record scratch
+13. Rufar de tambores
+14. Suspense
+15. Revelação
+16. Contagem regressiva
+
+## 5.2. Objetos e cotidiano — 14 efeitos
+
+17. Telefone
+18. Desligar telefone
+19. Porta abrindo
+20. Porta fechando
+21. Batidas na porta
+22. Interruptor
+23. Torneira abrindo
+24. Torneira fechando
+25. Descarga
+26. Vidro quebrando
+27. Martelada
+28. Objeto caindo
+29. Passos
+30. Chaves
+
+## 5.3. Ação e acidentes — 12 efeitos
+
+31. Pancada
+32. Soco cômico
+33. Madeira quebrando
+34. Buzina
+35. Carro arrancando
+36. Freada
+37. Derrapagem
+38. Explosão
+39. Choque elétrico
+40. Mergulho
+41. Água espirrando
+42. Queda cômica
+
+## 5.4. Ambientes — 12 efeitos
+
+43. Fogo
+44. Floresta
+45. Vento
+46. Chuva
+47. Tempestade
+48. Escritório
+49. Escola
+50. Restaurante
+51. Trânsito
+52. Praia
+53. Multidão
+54. Terror
+
+## 5.5. Escola e temas — 8 efeitos
+
+55. Sinal escolar
+56. Crianças conversando
+57. Giz no quadro
+58. Relógio
+59. Sirene
+60. Música de escolinha
+61. Música de elevador
+62. Música romântica
+
+## 5.6. Trilhas e transições — 10 efeitos
+
+63. Vitória
+64. Derrota
+65. Perseguição
+66. Mistério
+67. Abertura de programa
+68. Encerramento
+69. Transição cômica
+70. Tensão dramática
+71. Momento épico
+72. Silêncio dramático
+
+Para músicas e trilhas, obtenha gravações licenciadas adequadamente ou criações originais comprovadamente utilizáveis.
+
+Alguns efeitos podem exigir interpretação criativa, mas sempre preserve sua finalidade.
+
+Exemplo: "Silêncio dramático" pode representar uma transição cômica de interrupção sonora, desde que seu comportamento seja definido claramente, sem inventar uma faixa artificial apresentada como gravação real.
+
+**Não substitua efeitos ausentes por arquivos de outros efeitos apenas para completar a contagem.**
+
+Caso não seja possível localizar uma gravação adequada e licenciada para algum item, mantenha-o identificado como pendente e documente o motivo.
+
+A meta é concluir os 72 efeitos, mas qualidade, segurança e licenciamento prevalecem sobre a quantidade.
+
+---
+
+# 6. MEMES E EFEITOS DE TELEVISÃO
+
+Crie uma categoria denominada:
+
+**Memes e TV**
+
+Ela deverá permitir cadastrar efeitos de humor e memes, incluindo referências a programas brasileiros e bordões conhecidos.
+
+Exemplos de futuros cadastros:
+
+- Ratinho — Uepa!
+- Ratinho — Rapaz!
+- Rodrigo Faro — Efeitos de dança
+- Rodrigo Faro — Revelação
+- Faustão — Bordões
+- Silvio Santos — Efeitos
+- Vine boom
+- Bruh
+- Metal pipe
+- Ba dum tss
+- Risada meme
+- Efeitos virais diversos
+
+Esses são exemplos de organização, não autorização para baixar material protegido.
+
+Não baixe, extraia, redistribua ou publique automaticamente trechos de programas, músicas, vinhetas ou gravações protegidas sem licença compatível.
+
+Não use downloads não autorizados de YouTube ou outras plataformas.
+
+A categoria deve estar pronta para receber arquivos que o usuário possua ou tenha autorização para utilizar.
+
+Arquivos personalizados não deverão ser publicados automaticamente no GitHub.
+
+---
+
+# 7. REDESENHO INTEGRAL DOS ÍCONES SVG
+
+Esta é uma das principais exigências do projeto.
+
+**Todos os ícones dos efeitos devem ser refeitos do zero.**
+
+Não reutilize os ícones antigos dos botões de efeitos.
+
+Não utilize o mesmo ícone em diferentes efeitos apenas alterando a cor.
+
+Cada um dos 72 efeitos deverá possuir um SVG visualmente distinto e semanticamente associado ao respectivo som.
+
+Ícones podem compartilhar uma linguagem visual, mas não podem ser meras duplicações com pequenas alterações superficiais.
+
+## 7.1. Direção visual
+
+Crie ícones:
+
+- Modernos.
+- Coloridos.
+- Bonitos.
+- Expressivos.
+- Autoexplicativos.
+- Reconhecíveis em tamanho pequeno.
+- Adaptados para telas de celular.
+- Visualmente consistentes.
+- Com boa legibilidade em tema escuro.
+
+Não use emojis como substitutos dos SVG.
+
+Não utilize imagens rasterizadas dentro de arquivos SVG.
+
+Não dependa de bibliotecas externas de ícones.
+
+Não utilize ícones monocromáticos genéricos para todos os efeitos.
+
+Prefira ilustrações vetoriais simplificadas, com formas claras, cores bem escolhidas, contraste elevado e detalhes suficientes para transmitir o efeito.
+
+Evite excesso de detalhes que prejudique a leitura em botões pequenos.
+
+Utilize `viewBox` padronizado, permitindo redimensionamento sem perda de qualidade.
+
+Garanta contraste adequado entre ícone, fundo e elementos visuais.
+
+## 7.2. Exemplos de representação
+
+- Campainha: campainha de recepção com elemento de acionamento e ondas sonoras.
+- Sino: sino metálico dourado com badalo.
+- Rebobinar: fita ou mídia com setas de retrocesso.
+- Telefone: telefone clássico tocando.
+- Desligar telefone: aparelho retornando ao gancho.
+- Porta abrindo: porta entreaberta com perspectiva.
+- Porta fechando: porta fechada com indicação de movimento.
+- Batidas na porta: mão batendo na madeira.
+- Interruptor: interruptor de parede.
+- Vidro quebrando: taça ou vidro estilhaçado.
+- Pancada: impacto visual com linhas de força.
+- Soco cômico: punho estilizado com impacto.
+- Fogo: chamas em tons quentes.
+- Floresta: árvores com elementos naturais.
+- Escritório: mesa, computador e documentos.
+- Escola: quadro escolar com elementos de sala de aula.
+- Buzina: veículo com ondas sonoras.
+- Freada: pneu ou carro com marcas de frenagem.
+- Derrapagem: carro inclinado com marcas de pneus.
+- Risadas: rostos ou representação de plateia rindo.
+- Aplausos: mãos batendo palmas.
+- Vaia: plateia demonstrando reprovação.
+- Grilos: grilo ilustrado.
+- Suspense: elemento dramático reconhecível.
+- Revelação: cortina ou elemento de surpresa.
+- Sinal escolar: sino escolar ou aparelho de sinalização.
+- Relógio: relógio analógico bem caracterizado.
+- Mergulho: pessoa ou objeto entrando na água.
+- Choque elétrico: raio e faíscas.
+- Descarga: vaso sanitário e movimento de água.
+
+Esses exemplos são direcionamentos. Desenvolva representações equivalentes ou superiores.
+
+## 7.3. Organização e manutenção
+
+Os ícones devem ser disponibilizados em uma biblioteca local de SVGs ou estrutura equivalente segura e sustentável.
+
+O catálogo deverá associar cada efeito a seu ícone específico.
+
+O cadastro de novos sons deverá permitir selecionar um ícone existente.
+
+Também deverá ser possível adicionar ícones SVG personalizados com validação e sanitização adequadas.
+
+Não injete conteúdo SVG não confiável diretamente no DOM.
+
+Quando necessário, utilize uma estratégia de renderização isolada ou segura.
+
+---
+
+# 8. REDESENHO COMPLETO DA INTERFACE
+
+A interface existente deverá ser revista integralmente.
+
+O principal dispositivo de utilização será um celular.
+
+A interface precisa permitir que o usuário identifique e reproduza qualquer efeito com o mínimo de interações possível.
+
+## 8.1. Identidade visual
+
+Adote:
+
+- Tema escuro.
+- Aparência profissional.
+- Contraste elevado.
+- Tipografia legível.
+- Botões visualmente definidos.
+- Ícones grandes.
+- Espaçamento consistente.
+- Hierarquia visual clara.
+- Microinterações discretas.
+- Sem excesso de elementos decorativos.
+
+Evite visual amador, botões genéricos ou cores aleatórias sem consistência.
+
+Os ícones poderão ter cores individuais, enquanto os cartões utilizarão uma linguagem visual uniforme.
+
+## 8.2. Grade de sons
+
+Em celulares:
+
+- Preferencialmente três colunas.
+- Cartões grandes e fáceis de tocar.
+- Ícone centralizado.
+- Nome curto abaixo.
+- Alturas consistentes.
+- Sem textos cortados de forma confusa.
+- Sem sobreposição.
+- Sem rolagem horizontal.
+- Sem necessidade de zoom.
+
+Em telas extremamente estreitas, adapte a quantidade de colunas caso seja necessário preservar a usabilidade.
+
+Em tablets e computadores, aumente as colunas conforme o espaço disponível.
+
+As dimensões dos cartões não devem mudar enquanto os sons são reproduzidos.
+
+## 8.3. Tela inicial
+
+A tela principal deverá mostrar:
+
+1. Identificação da Soundboard.
+2. Botão STOP sempre acessível.
+3. Identificação do efeito em reprodução.
+4. Controle de volume.
+5. Acesso rápido aos favoritos.
+6. Grade de efeitos.
+7. Acesso ao cadastro de novos sons.
+8. Acesso ao gerenciamento da biblioteca.
+
+Favoritos sugeridos inicialmente:
+
+1. Campainha
+2. Sino
+3. Rebobinar
+4. Telefone
+5. Pancada
+6. Risadas
+7. Vidro quebrando
+8. Suspense
+9. Fogo
+10. Buzina
+11. Aplausos
+12. Grilos
+
+Esses favoritos deverão ser personalizáveis.
+
+## 8.4. Organização
+
+Permita:
+
+- Favoritar.
+- Desfavoritar.
+- Reordenar favoritos.
+- Navegar por categorias.
+- Pesquisar pelo nome.
+- Adicionar efeitos.
+- Editar efeitos.
+- Remover efeitos personalizados.
+- Substituir arquivos de áudio.
+- Escolher ícone.
+- Escolher cor.
+- Configurar loop.
+- Definir categoria.
+
+A edição e organização não devem interferir na reprodução normal.
+
+Implemente um modo de edição claramente separado do modo de apresentação.
+
+Evite arrastar e soltar como único meio de reordenação; ofereça alternativa acessível no celular.
+
+---
+
+# 9. INTERFACE OBRIGATORIAMENTE EM PORTUGUÊS
+
+**Toda a interface voltada ao usuário deve estar em português brasileiro.**
+
+Faça uma auditoria completa e remova textos em inglês atualmente presentes.
+
+Verifique:
+
+- Títulos.
+- Subtítulos.
+- Botões.
+- Menus.
+- Categorias.
+- Formulários.
+- Modais.
+- Mensagens de erro.
+- Mensagens de sucesso.
+- Confirmações.
+- Estados vazios.
+- Avisos.
+- Notificações.
+- Atributos de acessibilidade.
+- Textos de ajuda.
+- Preferências.
+- Instalação PWA.
+- Nome e descrição do aplicativo.
+
+Exemplos:
+
+- `STOP` → `PARAR`
+- `Play` → `Reproduzir`
+- `Pause` → `Pausar`
+- `Favorites` → `Favoritos`
+- `Settings` → `Configurações`
+- `Add sound` → `Adicionar som`
+- `Edit` → `Editar`
+- `Delete` → `Excluir`
+- `Loop` → `Repetição contínua`
+- `Volume` → `Volume`
+- `Search` → `Pesquisar`
+- `Import` → `Importar`
+- `Export` → `Exportar`
+- `Ready` → `Pronto`
+- `Loading` → `Carregando`
+
+Termos técnicos internos de programação não precisam ser traduzidos quando isso prejudicar a legibilidade do código.
+
+O idioma do documento deverá ser `pt-BR`.
+
+Não deixe textos visíveis em inglês como resíduos da implementação anterior.
+
+---
+
+# 10. REGRAS DE REPRODUÇÃO
+
+A reprodução deverá ser rápida, previsível e confiável.
+
+## 10.1. Um efeito por vez
+
+Somente um efeito pode estar em reprodução.
+
+Comportamento obrigatório:
+
+- Tocar um botão inicia seu áudio.
+- Tocar o mesmo botão novamente interrompe seu áudio.
+- Tocar outro botão interrompe o anterior e inicia o novo.
+- Tocar PARAR interrompe qualquer áudio.
+- Ao terminar um áudio pontual, o botão retorna ao estado normal.
+- Efeitos configurados como contínuos repetem até serem interrompidos.
+
+## 10.2. Concorrência
+
+Proteja o sistema contra condições de corrida.
+
+Se o usuário tocar rapidamente em vários efeitos:
+
+- Apenas a última seleção deverá permanecer válida.
+- Um carregamento antigo não poderá iniciar reprodução posteriormente.
+- Nenhum áudio anterior poderá voltar a tocar inesperadamente.
+- Não devem existir dois efeitos tocando simultaneamente por falha de sincronização.
+
+Utilize controle explícito da sessão de reprodução.
+
+## 10.3. Latência
+
+Priorize resposta rápida ao toque.
+
+Utilize estratégias adequadas de pré-carregamento, principalmente para favoritos.
+
+Evite decodificação desnecessária em cada acionamento.
+
+Não carregue dezenas de arquivos grandes de forma agressiva a ponto de prejudicar o celular.
+
+Controle o uso de memória.
+
+## 10.4. Erros
+
+Trate corretamente:
+
+- Arquivo ausente.
+- Arquivo inválido.
+- Formato incompatível.
+- Falha de decodificação.
+- Falha no armazenamento.
+- Permissão de reprodução não concedida.
+- Interrupção por sistema operacional.
+- Falha de conexão.
+- Cache desatualizado.
+
+Nunca exiba um botão como reproduzindo se o áudio não começou.
+
+---
+
+# 11. ÁUDIO EM CELULAR, FONES E BLUETOOTH
+
+O usuário utilizará a Soundboard por:
+
+- Alto-falante do celular.
+- Fones com fio.
+- Fones Bluetooth.
+- Caixa de som Bluetooth.
+- Caixa conectada por cabo ou adaptador.
+
+O aplicativo deverá utilizar a saída de áudio selecionada pelo sistema operacional.
+
+Não tente forçar uma saída que o navegador não tenha permissão ou capacidade de selecionar.
+
+## 11.1. Qualidade e intensidade
+
+Implemente:
+
+- Volume geral ajustável.
+- Normalização adequada dos arquivos.
+- Controle de picos digitais.
+- Compressão moderada quando apropriada.
+- Reprodução sem clipping digital causado pela aplicação.
+- Volume inicial conservador.
+- Ajustes persistidos localmente.
+- Botão para testar áudio.
+
+O volume percebido deve ser consistente, evitando diferenças bruscas entre efeitos.
+
+Não implemente ganho excessivo para compensar áudios mal preparados.
+
+Não faça a Soundboard alterar automaticamente o volume físico do aparelho.
+
+Não prometa proteção absoluta contra volume excessivo, pois caixas e fones possuem controles próprios.
+
+## 11.2. Teste de áudio
+
+Inclua um botão:
+
+**Testar áudio**
+
+Ele deverá reproduzir um sinal breve, agradável e controlado, adequado para conferir se a caixa ou o fone está funcionando.
+
+Esse som deverá estar disponível offline.
+
+## 11.3. Bluetooth
+
+Considere que dispositivos Bluetooth podem apresentar latência.
+
+Não implemente soluções fictícias que prometam eliminar essa latência pelo HTML.
+
+Documente objetivamente que, para timing extremamente preciso, a conexão por cabo pode ser preferível.
+
+---
+
+# 12. CADASTRO DE SONS SEM PROGRAMAÇÃO
+
+O usuário deve conseguir expandir a biblioteca diretamente pela interface.
+
+Ao clicar em **Adicionar som**, deverá poder:
+
+1. Selecionar arquivo de áudio do dispositivo.
+2. Definir nome.
+3. Escolher categoria.
+4. Selecionar ícone SVG.
+5. Selecionar cor.
+6. Configurar reprodução contínua.
+7. Adicionar aos favoritos.
+8. Pré-escutar.
+9. Salvar.
+
+Ao editar um efeito, deverá poder substituir o arquivo associado sem recriar o cadastro.
+
+Mantenha identificadores estáveis para preservar favoritos e configurações.
+
+Valide tamanho, formato e integridade dos arquivos.
+
+Não aceite conteúdo arbitrário inseguro.
+
+Trate nomes duplicados adequadamente sem provocar sobrescrita acidental.
+
+Permita adicionar tantos efeitos quanto os limites reais de armazenamento e desempenho suportarem, sem restrição artificial de 72 itens.
+
+Quando houver limitação de armazenamento, informe-a claramente.
+
+---
+
+# 13. ARMAZENAMENTO LOCAL
+
+Utilize IndexedDB para os arquivos importados e configurações que exigirem armazenamento estruturado.
+
+Os efeitos oficiais devem permanecer como arquivos estáticos no projeto.
+
+Os efeitos adicionados pelo usuário devem permanecer armazenados localmente.
+
+Não publique automaticamente os áudios personalizados.
+
+O armazenamento deverá preservar:
+
+- Arquivo.
+- Identificador do efeito.
+- Nome.
+- Categoria.
+- Ícone.
+- Cor.
+- Configuração de loop.
+- Favorito.
+- Ordem.
+- Metadados necessários.
+
+Implemente migração segura caso a estrutura do IndexedDB precise ser alterada.
+
+Não apague dados existentes durante atualização de versão.
+
+Evite duplicação desnecessária de arquivos grandes.
+
+---
+
+# 14. EXPORTAÇÃO E IMPORTAÇÃO
+
+O usuário deve conseguir exportar a biblioteca personalizada para backup ou transferência entre dispositivos.
+
+A exportação deverá incluir os arquivos de áudio personalizados, não apenas os metadados.
+
+Preserve também:
+
+- Categorias.
+- Nomes.
+- Ícones.
+- Cores.
+- Favoritos.
+- Ordem.
+- Configuração de loop.
+
+Na importação:
+
+- Valide a estrutura.
+- Verifique integridade.
+- Evite sobrescritas indevidas.
+- Identifique conflitos.
+- Permita recuperação segura em caso de falha.
+- Não apague a biblioteca existente sem confirmação.
+- Trate arquivos incompatíveis.
+- Impeça execução de conteúdo malicioso.
+
+Utilize formato de backup documentado e portátil.
+
+---
+
+# 15. FUNCIONAMENTO OFFLINE E PWA
+
+A Soundboard deverá funcionar sem internet após os recursos essenciais terem sido armazenados corretamente.
+
+Garanta:
+
+- Manifesto válido.
+- Service Worker.
+- Cache do HTML, CSS e JavaScript.
+- Cache dos ícones.
+- Cache dos efeitos oficiais disponíveis.
+- Estratégia de atualização segura.
+- Tratamento de versões.
+- Indicação de disponibilidade offline.
+- Funcionamento após reiniciar o navegador, respeitadas as limitações de armazenamento do sistema.
+
+Não considere o offline concluído apenas porque um Service Worker foi registrado.
+
+Garanta que o aplicativo consiga identificar arquivos ainda não armazenados.
+
+Não informe que a biblioteca está disponível offline enquanto arquivos essenciais estiverem ausentes.
+
+Evite downloads excessivos em segundo plano sem informação adequada.
+
+Os áudios personalizados armazenados no IndexedDB deverão continuar acessíveis offline enquanto os dados locais forem preservados.
+
+---
+
+# 16. PERFORMANCE E EXPERIÊNCIA MOBILE
+
+Otimize especificamente para utilização durante apresentações.
+
+Requisitos:
+
+- Acionamento com um toque.
+- Sem menus intermediários para reproduzir favoritos.
+- Sem atrasos artificiais.
+- Sem transições que bloqueiem interação.
+- Sem rolagem horizontal.
+- Sem layout quebrado.
+- Sem elementos encobertos.
+- Sem botões pequenos demais.
+- Sem textos ilegíveis.
+- Sem interfaces que dependam exclusivamente de hover.
+- Sem reordenamentos inesperados durante reprodução.
+- Sem dependência de internet no momento do uso offline.
+
+Considere áreas seguras de dispositivos com notch e barras de navegação.
+
+Garanta que o botão PARAR permaneça acessível.
+
+Utilize estados visuais para reprodução, carregamento, indisponibilidade e erro.
+
+Respeite preferências de redução de movimento.
+
+Implemente marcação semântica e acessibilidade por teclado quando aplicável.
+
+---
+
+# 17. SEGURANÇA
+
+Não utilize `innerHTML` com conteúdo não confiável sem sanitização adequada.
+
+Proteja os fluxos de:
+
+- Importação de arquivos.
+- Upload local.
+- Processamento de metadados.
+- SVG personalizado.
+- Importação de backups.
+- Nomes definidos pelo usuário.
+- Persistência IndexedDB.
+
+Valide entradas.
+
+Não execute scripts oriundos de arquivos importados.
+
+Não interprete backups como código.
+
+Não aceite caminhos de arquivos capazes de escapar do diretório autorizado.
+
+Não incorpore credenciais, tokens ou segredos ao código.
+
+Não faça chamadas a APIs externas sem necessidade funcional clara.
+
+---
+
+# 18. DOCUMENTAÇÃO DA BIBLIOTECA DE ÁUDIO
+
+Crie documentação local para registrar cada áudio oficial.
+
+Para cada efeito, inclua:
+
+- Identificador.
+- Nome em português.
+- Categoria.
+- Nome do arquivo.
+- Caminho relativo.
+- Fonte original.
+- URL de origem.
+- Autor, quando disponível.
+- Licença.
+- URL ou evidência de licenciamento.
+- Data de obtenção.
+- Duração.
+- Formato.
+- Loop ou reprodução pontual.
+- Situação da validação.
+- Observações relevantes.
+
+Não invente autores, licenças, durações ou resultados de validação.
+
+Não atribua CC0 a arquivos sem comprovação.
+
+Registre pendências de forma explícita.
+
+Prepare a documentação necessária para cumprir obrigações de atribuição, quando houver.
+
+---
+
+# 19. CRITÉRIOS DE ACEITE
+
+A implementação será considerada satisfatória somente se:
+
+1. A aplicação abrir corretamente no celular.
+2. Toda a interface estiver em português brasileiro.
+3. Os 72 efeitos estiverem cadastrados.
+4. Cada efeito possuir um ícone SVG exclusivo, bonito, colorido e autoexplicativo.
+5. Os ícones antigos dos efeitos tiverem sido substituídos.
+6. A interface estiver visualmente consistente.
+7. O botão PARAR funcionar imediatamente.
+8. Apenas um efeito tocar por vez.
+9. O segundo toque no mesmo botão interromper a reprodução.
+10. Sons ambientais em loop funcionarem corretamente.
+11. O controle de volume funcionar.
+12. O teste de áudio funcionar.
+13. O usuário conseguir adicionar um áudio pelo celular.
+14. O usuário conseguir editar um efeito.
+15. O usuário conseguir substituir o arquivo de um efeito.
+16. Favoritos puderem ser personalizados e reordenados.
+17. O armazenamento local preservar os áudios.
+18. A exportação incluir os arquivos personalizados.
+19. A importação restaurar os dados corretamente.
+20. O projeto continuar compatível com GitHub Pages.
+21. O modo offline funcionar para recursos efetivamente armazenados.
+22. Os arquivos de áudio oficiais presentes forem reais e válidos.
+23. Os efeitos não apresentarem clipping digital introduzido pelo processamento.
+24. Os arquivos oficiais estiverem corretamente vinculados aos botões.
+25. Não existirem downloads falsos, arquivos vazios ou sons genéricos usados como preenchimento.
+26. Licenças e origens estiverem documentadas.
+27. O `sino-demo.wav` funcional for preservado.
+28. A aplicação não depender de serviços externos para tocar arquivos já armazenados.
+29. Não houver erros de JavaScript introduzidos pelas alterações.
+30. A interface permanecer funcional em telas pequenas.
+
+A conclusão dos 72 downloads deverá ser informada separadamente do desenvolvimento do painel.
+
+Não declare a biblioteca completa caso existam arquivos pendentes.
+
+---
+
+# 20. EXECUÇÃO E VALIDAÇÃO
+
+Execute o desenvolvimento em etapas internamente, sem solicitar confirmação a cada pequena decisão técnica.
+
+Ordem recomendada:
+
+**Etapa 1 — Diagnóstico**
+
+Inspecionar a implementação existente e identificar os pontos que exigem correção.
+
+**Etapa 2 — Biblioteca de áudio**
+
+Pesquisar, baixar, preparar, organizar e integrar os arquivos autorizados.
+
+**Etapa 3 — Identidade visual**
+
+Refazer integralmente os ícones SVG e a interface.
+
+**Etapa 4 — Gerenciamento**
+
+Revisar cadastro, edição, armazenamento, favoritos e importação/exportação.
+
+**Etapa 5 — Reprodução**
+
+Revisar latência, concorrência, volume, compressor, loops e integração com dispositivos de áudio.
+
+**Etapa 6 — PWA**
+
+Revisar armazenamento offline, cache, manifestos e atualizações.
+
+**Etapa 7 — Revisão e validação**
+
+Revisar todas as alterações e validar o funcionamento com os recursos disponíveis.
+
+Você está autorizado a realizar downloads de áudio permitidos e a utilizar ferramentas necessárias para inspecionar, converter e validar esses arquivos dentro do escopo do projeto.
+
+Não instale ou atualize dependências desnecessariamente.
+
+Não execute comandos destrutivos.
+
+Não faça deploy.
+
+Não altere configurações externas do usuário.
+
+Se testes automatizados ou navegador estiverem disponíveis, utilize-os para verificar o comportamento da aplicação sem extrapolar o escopo.
+
+Não afirme que validou reprodução física em fones ou Bluetooth caso não tenha acesso real a esses dispositivos.
+
+---
+
+# 21. ENTREGA FINAL OBRIGATÓRIA
+
+Ao terminar, apresente um relatório objetivo contendo:
+
+### Implementação
+- Arquivos criados.
+- Arquivos modificados.
+- Principais melhorias.
+- Correções aplicadas.
+- Funcionalidades preservadas.
+
+### Biblioteca de áudio
+- Quantidade total de efeitos cadastrados.
+- Quantidade de arquivos reais obtidos.
+- Quantidade validada.
+- Quantidade pendente.
+- Lista explícita de pendências, caso existam.
+- Resumo das licenças utilizadas.
+
+### Interface
+- Confirmação da auditoria de português brasileiro.
+- Quantidade de SVGs exclusivos produzidos.
+- Melhorias de usabilidade mobile.
+
+### Validação
+- Verificações realizadas.
+- Resultados confirmados.
+- Limitações identificadas.
+- Recursos que não puderam ser testados.
+
+### Publicação
+- Orientações objetivas para publicar a pasta atualizada no GitHub Pages.
+- Informações importantes para atualização do cache e instalação PWA.
+
+Não substitua a entrega por uma explicação teórica.
+
+**O resultado esperado é o projeto efetivamente atualizado dentro de `C:\Users\vitor\Downloads\soundboard-v1.1`, com a melhor biblioteca de efeitos sonoros reais e licenciados que for possível obter, ícones SVG individualizados e interface totalmente em português, pronto para uso e expansão pelo próprio usuário.**
+
+Execute a tarefa de forma completa, criteriosa e autônoma, preservando segurança, qualidade e compatibilidade.

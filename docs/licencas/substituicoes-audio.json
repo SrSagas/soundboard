@@ -1,0 +1,47 @@
+[
+  {
+    "file": "sons/passos.mp3",
+    "id": "builtin:passos",
+    "sha256": "6be0a0028cccdfc6357dc26e0b6057f8da692caa4f3f94183b7a11ee899a3cd1",
+    "previousSha256": "aa22fa24747d35d560a6a2335f21629ad27bb6c67da6677e898f1cda2a8816f4",
+    "bytes": 576783,
+    "duration": 18.024469,
+    "synchronizedAt": "2026-10-24T17:15:12.130745+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/explosao.mp3",
+    "id": "builtin:explosao",
+    "sha256": "aca0d73a429c99709c42d3f310a4a2baecaab2bf962c4c973e6540a7c313a7ae",
+    "previousSha256": "46250f8483d624b1c5e4c9f8bf5eb5130a94d61dbfa0bd13fa21f8283b13ba26",
+    "bytes": 90279,
+    "duration": 2.821219,
+    "synchronizedAt": "2026-10-24T17:15:12.130745+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/agua-espirrando.mp3",
+    "id": "builtin:agua-espirrando",
+    "sha256": "ab3e3d531eda3c00a5353a21e1e83fea1a3542c5c690ac17cf21325481e15430",
+    "previousSha256": "e6acb7a7d0a04e5e1ba3e8832dc3ee05dc8d279355c6ef3cee5173fec6c2bdca",
+    "bytes": 144384,
+    "duration": 4.512,
+    "synchronizedAt": "2026-10-24T17:15:12.130745+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  }
+]
