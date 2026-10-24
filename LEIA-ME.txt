@@ -3,11 +3,14 @@ Atualização visual de 24/10/2026
 
 Interface profissional escura e dessaturada, com transporte compacto e 72 ícones
 com contorno e segunda cor discreta. A biblioteca mantém 72 cadastros,
-71 MP3 reais e a ação Silêncio dramático, com substituições feitas pelo usuário.
+71 arquivos de áudio e a ação Silêncio dramático, com substituições feitas pelo usuário.
 
 NAVEGAÇÃO
 - Favoritos: seus efeitos de acesso imediato. Um toque reproduz; outro no mesmo
-  cartão para. Outro efeito troca o som. PARAR também cancela carregamentos.
+  cartão para somente aquele efeito. Outros cartões acrescentam sons à mistura.
+- Vários efeitos e loops podem tocar ao mesmo tempo. Cada cartão mostra seu estado.
+  PARAR interrompe todos os sons e cancela todos os carregamentos. Silêncio dramático
+  também encerra a mistura. O volume e o compressor são gerais para todos os sons.
 - Todos os efeitos: catálogo com pesquisa e categoria. No celular, são três colunas
   a partir de 360 px e duas em telas menores. Os cartões mantêm as dimensões ao tocar.
 - Biblioteca: Adicionar som, Editar efeitos, reordenação dos favoritos, backups,
@@ -25,13 +28,15 @@ CORES E ÍCONES
 - SVG importado continua validado e exibido como imagem isolada, nunca como HTML.
 
 PRESERVAÇÃO
-- Os MP3 atuais não foram recodificados. Passos, Explosão e Água espirrando usam
-  os arquivos substituídos pelo usuário, que declarou possuir licença de uso.
-  Os demais 68 continuam idênticos (56 CC0 e 12 CC BY 4.0).
+- Os áudios atuais não foram recodificados. As substituições feitas pelo usuário
+  aparecem no inventário com licença de uso declarada; as fontes das versões
+  anteriores continuam registradas como histórico.
+- Carregar arma usa sons/gun-load.mp3 e substitui Pancada. O arquivo sons/pancada.mp3
+  foi removido. O ID interno continua builtin:pancada para manter favoritos/backups.
   Histórico de fontes/licenças preservado; inventário atual: audio-library.json.
   Detalhes e procedimento para novas trocas: docs/SUBSTITUICOES-AUDIO.md.
-- Núcleo de reprodução, compressor, volume, IndexedDB, migração, backups com áudio,
-  validações e gerência offline permanecem intactos. Nenhum banco foi apagado.
+- IndexedDB, migração, backups com áudio, validações e gerência offline permanecem
+  preservados. A reprodução agora mistura efeitos com volume e compressor gerais.
 - Sons particulares continuam somente no navegador, sem publicação automática.
 - sino-demo.wav já estava ausente antes da v1.2; nada foi fabricado com esse nome.
 
@@ -61,8 +66,8 @@ PUBLICAÇÃO
 
 VALIDAÇÃO E LIMITAÇÕES
 - Testes Node, testes de interface/responsividade e fluxos Chrome completos foram
-  executados. O inventário e cache correspondem aos MP3 atuais; o núcleo funcional
-  protegido mantém os hashes originais.
+  executados. O inventário e cache correspondem aos áudios atuais. Armazenamento,
+  backups, validações e módulo offline mantêm seus hashes originais.
 - Não foi testado Safari/iOS físico, Chrome Android físico nem áudio em fones/Bluetooth.
   Emulação de tela/toque não equivale a teste em aparelho real.
 - A escuta perceptual dos 71 áudios e a fluidez auditiva dos loops permanecem pendentes

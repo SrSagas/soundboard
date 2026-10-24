@@ -15,3 +15,9 @@ Verificações: 144 vetores de efeitos/acento renderizados, 145 XMLs válidos in
 Fontes e auditoria visual: [matriz e folha dos ícones](ICONES-V13.md), `work/icon-refinement/report.json`, `work/icon-refinement/validation.json` e `docs/VALIDACAO-V13.json`. O gerador foi ajustado para gravar bytes UTF-8 com quebras consistentes, de modo que os hashes documentados coincidam também no Windows.
 
 O pacote estático e a prévia recebem os ícones novos e os MP3 atuais da pasta. O cache usa hashes atualizados para baixar as substituições e verificar sua integridade. A licença de uso declarada pelo usuário aparece nos créditos desses três efeitos. Na mesma origem do aplicativo, use **Atualizar agora** para ativar a interface; não limpe dados do site.
+
+## Substituição de Pancada por Carregar arma
+
+O cartão usa agora `sons/gun-load.mp3`, fornecido pelo usuário, sem recodificação. `sons/pancada.mp3` foi removido. A nova ilustração mostra arma de perfil e seta de recarga, em cinza claro e dourado discreto. Os dois SVGs mantêm o nome interno `pancada.svg`, assim como o ID `builtin:pancada`, para preservar favoritos e escolhas de ícone em backups anteriores. O nome padrão antigo é atualizado na exibição; nomes e áudios personalizados continuam preservados.
+
+Inventário e hashes offline foram sincronizados também com as demais substituições fornecidas pelo usuário. Um arquivo chamado `carro-arrancando.mp3` contém WAV PCM: seu formato real está registrado no inventário, sem alteração de bytes. Os 71 áudios atuais foram decodificados no Chrome; 19 testes unitários, testes funcionais/offline e de interface passaram. O novo efeito foi reproduzido offline após reiniciar o navegador. Nenhum ZIP ou deploy foi criado.

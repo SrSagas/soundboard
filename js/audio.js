@@ -1,13 +1,20 @@
-// Uma sessão de reprodução. Nenhuma decisão assíncrona pode reativar uma sessão antiga.
+// Fontes independentes por efeito, com volume/compressor compartilhados e cancelamento por ID.
 export class AudioEngine {
   constructor({contextFactory,loadBuffer,onState=()=>{},maxCacheBytes=24*1024*1024}={}) {
     this.contextFactory=contextFactory||(()=>new (window.AudioContext||window.webkitAudioContext)());
     this.loadBuffer=loadBuffer||((item,ctx,signal)=>this.decodeItem(item,ctx,signal));
     this.onState=onState; this.maxCacheBytes=maxCacheBytes; this.cache=new Map();
-    this.cacheBytes=0; this.volume=.35; this.sequence=0; this.state={phase:'idle',id:null};
+    this.cacheBytes=0; this.volume=.35; this.sequence=0; this.voices=new Map();this.state={phase:'idle',id:null,voices:[]};
     this.blobKeys=new WeakMap();this.nextBlobKey=0;
   }
-  emit(state) { this.state=state; this.onState(state); }
+  emit(event={},notify=true) {
+    const voices=[...this.voices.values()].map(({id,name,phase,loop})=>({id,name,phase,loop}));
+    const playing=voices.filter(v=>v.phase==='playing'),loading=voices.filter(v=>v.phase==='loading');
+    const lead=playing[playing.length-1]||loading[loading.length-1];
+    this.state={phase:lead?.phase||event.phase||'idle',id:lead?.id||event.id||null,name:lead?.name||event.name,
+      loop:lead?.loop||false,voices,message:event.message,error:event.phase==='error'?event:undefined};
+    if(notify)this.onState(this.state);
+  }
   setup() {
     if(this.context)return this.context;
     const ctx=this.contextFactory();
@@ -26,31 +33,36 @@ export class AudioEngine {
     if(this.gain)this.gain.gain.setTargetAtTime(this.volume,this.context.currentTime,.015);
   }
   stop(notify=true) {
-    this.sequence++; this.controller?.abort(); this.controller=null;
-    if(this.source){const source=this.source;this.source=null;source.onended=null;
+    this.sequence++;
+    for(const id of [...this.voices.keys()])this.stopVoice(id,false);
+    this.emit({},notify);
+  }
+  stopVoice(id,notify=true) {
+    const voice=this.voices.get(id);if(!voice)return;
+    this.voices.delete(id);this.sequence++;voice.controller.abort();
+    if(voice.source){const source=voice.source;source.onended=null;
       try{source.stop();}catch{} try{source.disconnect();}catch{}}
-    if(notify)this.emit({phase:'idle',id:null});
+    if(notify)this.emit();
   }
   async toggle(item) {
-    if(this.state.id===item.id&&['loading','playing'].includes(this.state.phase)){this.stop();return;}
-    this.stop(false); const session=this.sequence;
-    if(item.action==='stop'){this.emit({phase:'idle',id:null,message:'Silêncio dramático: reprodução interrompida.'});return;}
-    const controller=new AbortController(); this.controller=controller;
-    this.emit({phase:'loading',id:item.id,name:item.name});
+    if(item.action==='stop'){this.stop(false);this.emit({message:'Silêncio dramático: todos os sons foram interrompidos.'});return;}
+    if(this.voices.has(item.id)){this.stopVoice(item.id);return;}
+    const voice={id:item.id,name:item.name,phase:'loading',loop:!!item.loop,controller:new AbortController()};
+    this.voices.set(item.id,voice);this.sequence++;this.emit();
     try {
       const ctx=this.setup(); await ctx.resume();
-      if(session!==this.sequence)return;
+      if(this.voices.get(item.id)!==voice)return;
       if(ctx.state!=='running')throw Error('Toque novamente para liberar o áudio neste navegador.');
-      const buffer=await this.buffer(item,controller.signal);
-      if(session!==this.sequence)return;
+      const buffer=await this.buffer(item,voice.controller.signal);
+      if(this.voices.get(item.id)!==voice)return;
       const source=ctx.createBufferSource();source.buffer=buffer;source.loop=!!item.loop;
+      voice.source=source;
       source.connect(this.compressor);
-      source.onended=()=>{if(this.source===source&&session===this.sequence)this.stop();};
-      this.source=source;source.start();
-      this.emit({phase:'playing',id:item.id,name:item.name,loop:!!item.loop});
+      source.onended=()=>{if(this.voices.get(item.id)===voice)this.stopVoice(item.id);};
+      source.start();voice.phase='playing';this.emit();
     } catch(error) {
-      if(session!==this.sequence)return;
-      this.stop(false);this.emit({phase:'error',id:item.id,name:item.name,message:audioError(error)});
+      if(this.voices.get(item.id)!==voice)return;
+      this.stopVoice(item.id,false);this.emit({phase:'error',id:item.id,name:item.name,message:audioError(error)});
     }
   }
   key(item){

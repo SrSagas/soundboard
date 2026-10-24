@@ -43,5 +43,583 @@
       "sourceProvided": false,
       "redistributionScope": "Não informado"
     }
+  },
+  {
+    "file": "sons/vidro-quebrando.mp3",
+    "id": "builtin:vidro-quebrando",
+    "sha256": "4b2e30e1eb3bbddc7ae9e037f713564ad9e26dc51f998ae0e23b08c69da1dc8e",
+    "previousSha256": "b025d5247825b8570eeb87f6c86338fbc417f5b447e5564f8ba2e5f146e147d9",
+    "previousFile": "sons/vidro-quebrando.mp3",
+    "previousName": "Vidro quebrando",
+    "bytes": 87771,
+    "duration": 2.742844,
+    "synchronizedAt": "2026-10-24T18:42:01.273373+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/martelada.mp3",
+    "id": "builtin:martelada",
+    "sha256": "c9abf50f6cfc21b3ff4f4d5f22b8eee2d8775da7ed32b1059204ee65851a05a1",
+    "previousSha256": "7f778fd2e7c2a0537ba793753c301cfb791f92198e23bb42506e21f1843d56cf",
+    "previousFile": "sons/martelada.mp3",
+    "previousName": "Martelada",
+    "bytes": 236640,
+    "duration": 11.832,
+    "synchronizedAt": "2026-10-24T18:42:01.273373+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/objeto-caindo.mp3",
+    "id": "builtin:objeto-caindo",
+    "sha256": "2452c5912cc000e8da12bf71bcc45fcc2b9f0c30d384f56905f653c590f1f551",
+    "previousSha256": "ff53f10febd36e30a6dfd34d37d895ca18383250f2fa83e23d3bd3b1ccfb9716",
+    "previousFile": "sons/objeto-caindo.mp3",
+    "previousName": "Objeto caindo",
+    "bytes": 46848,
+    "duration": 1.464,
+    "synchronizedAt": "2026-10-24T18:42:01.273373+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/gun-load.mp3",
+    "id": "builtin:pancada",
+    "sha256": "99b3efe742e9202d30c7e7e2005dc02a4551eeddb0381083abbc35ceb5a7e14c",
+    "previousSha256": "f23a6c887d9661b88a7ab49d666c5a20ef6dd813e7cfb48fd5b5f4ff4129720c",
+    "previousFile": "sons/pancada.mp3",
+    "previousName": "Pancada",
+    "bytes": 23405,
+    "duration": 0.731406,
+    "synchronizedAt": "2026-10-24T18:42:01.273373+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/soco-comico.mp3",
+    "id": "builtin:soco-comico",
+    "sha256": "d90bb3922977876af1b96cb4c84487c2294002dc6750b885c79520ea5cc04797",
+    "previousSha256": "2f3880e584e0f5038da54f97744876d00a564055549354f415c57110319ae370",
+    "previousFile": "sons/soco-comico.mp3",
+    "previousName": "Soco cômico",
+    "bytes": 50155,
+    "duration": 1.567344,
+    "synchronizedAt": "2026-10-24T18:42:01.273373+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/madeira-quebrando.mp3",
+    "id": "builtin:madeira-quebrando",
+    "sha256": "cb0e317ae88722b289f8965c017ed81e9611cb8995755dbe7a93ea780b61cee8",
+    "previousSha256": "eb61d4eb8a99875bdf0b05328dd42b360bf3a798d7e250caddc16d014892e9ff",
+    "previousFile": "sons/madeira-quebrando.mp3",
+    "previousName": "Madeira quebrando",
+    "bytes": 192768,
+    "duration": 6.024,
+    "synchronizedAt": "2026-10-24T18:42:01.273373+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/buzina.mp3",
+    "id": "builtin:buzina",
+    "sha256": "cdee47d2ede79b2ff3c4a2846093d6ce80e009677d59ef6f288c10ca26e6efb6",
+    "previousSha256": "db729235e6985afe21b5c382763b50c4b20480ab14ac24e23aff652c362687b3",
+    "previousFile": "sons/buzina.mp3",
+    "previousName": "Buzina",
+    "bytes": 261120,
+    "duration": 8.16,
+    "synchronizedAt": "2026-10-24T18:42:01.273373+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/carro-arrancando.mp3",
+    "id": "builtin:carro-arrancando",
+    "sha256": "858bee0796e9c9c72acce90501b42117d1acfe4b389f07ac623e929635cf33ef",
+    "previousSha256": "3ffd336930916b19f6e9a339c0ba7a3a5c06e9afd08dc5839df704dfa6d4963a",
+    "previousFile": "sons/carro-arrancando.mp3",
+    "previousName": "Carro arrancando",
+    "bytes": 970278,
+    "duration": 5.5,
+    "synchronizedAt": "2026-10-24T18:42:01.273373+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/freada.mp3",
+    "id": "builtin:freada",
+    "sha256": "5c88f0f8f158006cf419c4732ea75b3275e831266a1bdbc7c9f56d6e3657d380",
+    "previousSha256": "10b8d302f1acd0afb5a28c223c527fd05f71f664b7926d6090fc476b29be875f",
+    "previousFile": "sons/freada.mp3",
+    "previousName": "Freada",
+    "bytes": 24017,
+    "duration": 2.207007,
+    "synchronizedAt": "2026-10-24T18:42:01.273373+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/derrapagem.mp3",
+    "id": "builtin:derrapagem",
+    "sha256": "edb6214c7f56c10fafb79148ad63ab82af82c7a5a307f4831ce7f69126c908a9",
+    "previousSha256": "5c88f0f8f158006cf419c4732ea75b3275e831266a1bdbc7c9f56d6e3657d380",
+    "previousFile": "sons/derrapagem.mp3",
+    "previousName": "Derrapagem",
+    "bytes": 70080,
+    "duration": 3.504,
+    "synchronizedAt": "2026-10-24T18:42:01.273373+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/queda-comica.mp3",
+    "id": "builtin:queda-comica",
+    "sha256": "fa333520bc56f5f0a5475b44f7c925b7f803bc50c4c801cab3646e08a1448e7a",
+    "previousSha256": "84129e2e54f7e44774153abb0c286e06b99abf37235eca4831894edfa9abedff",
+    "previousFile": "sons/queda-comica.mp3",
+    "previousName": "Queda cômica",
+    "bytes": 356354,
+    "duration": 8.84,
+    "synchronizedAt": "2026-10-24T18:42:01.273373+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/rebobinar.mp3",
+    "id": "builtin:rebobinar",
+    "sha256": "1de459bb2945b321e5111a5e6232043eb2e94acbaa8cef83fac65165493f4f52",
+    "previousSha256": "b7c226400318793eaf5e5d235ccf8b3945468a01018af2e9eb62a1df6573004a",
+    "previousFile": "sons/rebobinar.mp3",
+    "previousName": "Rebobinar",
+    "bytes": 39168,
+    "duration": 1.224,
+    "synchronizedAt": "2026-10-24T19:59:29.015005+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/vaia.mp3",
+    "id": "builtin:vaia",
+    "sha256": "b142d989f6e4d1c25a348384a22865c09933512ff2c10a5a13c390e8fb48f06c",
+    "previousSha256": "ff11bee8ee2995c6466ccb6a9239ed07b4829f9e062809f3b9108b7b98059a38",
+    "previousFile": "sons/vaia.mp3",
+    "previousName": "Vaia",
+    "bytes": 78240,
+    "duration": 3.912,
+    "synchronizedAt": "2026-10-24T19:59:29.015005+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/grilos.mp3",
+    "id": "builtin:grilos",
+    "sha256": "a8013aa0fdb9e38015f1a11b3ad22ad9ccaf91c49a390e2e9cb3b522d2641c2d",
+    "previousSha256": "74ee3b19706342cfd4e5b096364a4611d40090e40e12917f7b83979b1d6aa507",
+    "previousFile": "sons/grilos.mp3",
+    "previousName": "Grilos",
+    "bytes": 307584,
+    "duration": 9.612,
+    "synchronizedAt": "2026-10-24T19:59:29.015005+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/record-scratch.mp3",
+    "id": "builtin:record-scratch",
+    "sha256": "41a5a066115252129cbd31eb3ff037929abffdddb35d930e64334cff05484312",
+    "previousSha256": "4e71210303c15dfea572a95002136e168bb2c43af8808a267c5c9c6c70a56ae6",
+    "previousFile": "sons/record-scratch.mp3",
+    "previousName": "Record scratch",
+    "bytes": 33120,
+    "duration": 1.656,
+    "synchronizedAt": "2026-10-24T19:59:29.015005+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/rufar-de-tambores.mp3",
+    "id": "builtin:rufar-de-tambores",
+    "sha256": "6360369a15a3307d41dda01895b1cb2e1a57508c6ce72e76e78708ffc54600d5",
+    "previousSha256": "0f09ab6856e337d5f10f4b3700a0c3ecdc8033326027f9081dd3d051e0ba2bd8",
+    "previousFile": "sons/rufar-de-tambores.mp3",
+    "previousName": "Rufar de tambores",
+    "bytes": 62208,
+    "duration": 1.944,
+    "synchronizedAt": "2026-10-24T19:59:29.015005+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/suspense.mp3",
+    "id": "builtin:suspense",
+    "sha256": "99b37b521fadab6ad7c7ba108e463d48d632b8774435fb748c6624ee9121bac1",
+    "previousSha256": "a4a4416da631c820f126257b2f3a07277ec70a476e3b60131127aed85eb39742",
+    "previousFile": "sons/suspense.mp3",
+    "previousName": "Suspense",
+    "bytes": 132075,
+    "duration": 4.127344,
+    "synchronizedAt": "2026-10-24T19:59:29.015005+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/contagem-regressiva.mp3",
+    "id": "builtin:contagem-regressiva",
+    "sha256": "eca9f4d54d06f41a93b7c9cdbef1ecd960ea3f2ce3d01c175f6a3d989445cb8d",
+    "previousSha256": "d0e09f9ae2ee9219e83fc194eee0821f624a5c183668a3f6e059cb0b71e011ac",
+    "previousFile": "sons/contagem-regressiva.mp3",
+    "previousName": "Contagem regressiva",
+    "bytes": 502560,
+    "duration": 25.128,
+    "synchronizedAt": "2026-10-24T19:59:29.015005+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/batidas-na-porta.mp3",
+    "id": "builtin:batidas-na-porta",
+    "sha256": "58cf3d377ebb087f5d8aa6f4a35e7fa2ab19933fdc9a9f16e1809b2c94cc9d36",
+    "previousSha256": "f0c9215319413ac8123a9ded3ff323ad6200210f695c7aa66a528070bc1796c8",
+    "previousFile": "sons/batidas-na-porta.mp3",
+    "previousName": "Batidas na porta",
+    "bytes": 83040,
+    "duration": 4.152,
+    "synchronizedAt": "2026-10-24T19:59:29.015005+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/interruptor.mp3",
+    "id": "builtin:interruptor",
+    "sha256": "4d061ba08659679e7af739d4cb6b57d68a19d9b317600c2c51bb152d0998b21a",
+    "previousSha256": "5ae4f64ef1df88fa0fe7cfdd8293749f045cf0a61948a9dd7938c336612b3049",
+    "previousFile": "sons/interruptor.mp3",
+    "previousName": "Interruptor",
+    "bytes": 18390,
+    "duration": 0.574688,
+    "synchronizedAt": "2026-10-24T19:59:29.015005+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/torneira-abrindo.mp3",
+    "id": "builtin:torneira-abrindo",
+    "sha256": "00863c97d56f1d5f9c5761682d447c5e98b3eea69d8abd236a725eece71bf636",
+    "previousSha256": "6ba0762e432efab2212e13121b68e975823b46dc52ea96e23e9b4f0826b8ee82",
+    "previousFile": "sons/torneira-abrindo.mp3",
+    "previousName": "Torneira abrindo",
+    "bytes": 469248,
+    "duration": 14.664,
+    "synchronizedAt": "2026-10-24T19:59:29.015005+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/descarga.mp3",
+    "id": "builtin:descarga",
+    "sha256": "93b61a25fb476693b950520581b7730761b1ea49ca85282b81eaa698303f798b",
+    "previousSha256": "c7c9d00c0f4b5ea56c656af0352d52930d42ce7e31d948eff1ff0fd9c481b6d1",
+    "previousFile": "sons/descarga.mp3",
+    "previousName": "Descarga",
+    "bytes": 130125,
+    "duration": 6.41,
+    "synchronizedAt": "2026-10-24T19:59:29.015005+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/fogo.mp3",
+    "id": "builtin:fogo",
+    "sha256": "001ecbc81045b0084a09004a6be66b069a585bce7b2c541947b6180cc6e12a09",
+    "previousSha256": "96635d47354ef454620b3ce2545728519cb1991e4deae0a18b67637516443ddb",
+    "previousFile": "sons/fogo.mp3",
+    "previousName": "Fogo",
+    "bytes": 1409280,
+    "duration": 44.04,
+    "synchronizedAt": "2026-10-24T19:59:29.015005+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/floresta.mp3",
+    "id": "builtin:floresta",
+    "sha256": "ee33c47bb9fb87fd24ddbfad40adbc196770c77f484de1b09cd0890b5d496e8c",
+    "previousSha256": "8b7879619d2bc48d98d0b7d5e5745a666045cb0670b72629edf535a872f9479d",
+    "previousFile": "sons/floresta.mp3",
+    "previousName": "Floresta",
+    "bytes": 5280768,
+    "duration": 165.024,
+    "synchronizedAt": "2026-10-24T19:59:29.015005+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/vento.mp3",
+    "id": "builtin:vento",
+    "sha256": "ce5dd05f940270ec35068efc8ca65a3990d1db6ad8a0367b91af077d55ae9c73",
+    "previousSha256": "f0e70c84d1b47a7465572f37cc05912e24e465052be039531e81ac89fc6c52ea",
+    "previousFile": "sons/vento.mp3",
+    "previousName": "Vento",
+    "bytes": 428544,
+    "duration": 13.392,
+    "synchronizedAt": "2026-10-24T19:59:29.015005+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/chuva.mp3",
+    "id": "builtin:chuva",
+    "sha256": "ca25c3c85f4fd56abf29ec7a59fc75d243bfbe12160f4f0870fc4f18c5e2c63e",
+    "previousSha256": "e3dc9f7e449e8295842209171c29d92fe78739a5c114887218523d158a5080f2",
+    "previousFile": "sons/chuva.mp3",
+    "previousName": "Chuva",
+    "bytes": 2915683,
+    "duration": 91.115094,
+    "synchronizedAt": "2026-10-24T19:59:29.015005+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/tempestade.mp3",
+    "id": "builtin:tempestade",
+    "sha256": "e876a0d6ce1abba47313d0faf746ced5f729e2aa9f35896a20f4b903a89721f2",
+    "previousSha256": "5f904eaa4c4a4c6b1d0cacb9c0b0168e9fdf3dfeb0d56536d21dac3b4728ed57",
+    "previousFile": "sons/tempestade.mp3",
+    "previousName": "Tempestade",
+    "bytes": 164004,
+    "duration": 8.010884,
+    "synchronizedAt": "2026-10-24T19:59:29.015005+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/transito.mp3",
+    "id": "builtin:transito",
+    "sha256": "be1b253121c305ac550262b5bc26f97b7020c8221a2b0098a1783755b2771d63",
+    "previousSha256": "4d83bf6c062a6f6992d7d6418a03875d30fcb3ce5a01a5517198bc8499ea3d30",
+    "previousFile": "sons/transito.mp3",
+    "previousName": "Trânsito",
+    "bytes": 2279085,
+    "duration": 56.916,
+    "synchronizedAt": "2026-10-24T19:59:29.015005+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/sinal-escolar.mp3",
+    "id": "builtin:sinal-escolar",
+    "sha256": "9ddb5a737dc0a22704b5eccd8556edac4cdc0d958b5a291dad231f0371af9f39",
+    "previousSha256": "8b3b410a407ceea7dab56db5f976648fb727b86ded84624f2c077e1ab14358f9",
+    "previousFile": "sons/sinal-escolar.mp3",
+    "previousName": "Sinal escolar",
+    "bytes": 56352,
+    "duration": 3.459773,
+    "synchronizedAt": "2026-10-24T19:59:29.015005+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/relogio.mp3",
+    "id": "builtin:relogio",
+    "sha256": "5c45635836a175e40bed38d6232141572c5d21b236bbdfc3ac11f4c277824481",
+    "previousSha256": "5460dda18d1c85770a54fe0b5d51342a4c09ea34dc04d9285aee4a781e924e32",
+    "previousFile": "sons/relogio.mp3",
+    "previousName": "Relógio",
+    "bytes": 259134,
+    "duration": 8.097938,
+    "synchronizedAt": "2026-10-24T19:59:29.015005+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/musica-romantica.mp3",
+    "id": "builtin:musica-romantica",
+    "sha256": "caaef54a44876789d4f4f193516fb4857a2b4a26f3931d8403b04bba24674787",
+    "previousSha256": "a373e45a6d690b9f4a7b6aac5f64e5ab803c0193b1b0957ea4e64911b37fac53",
+    "previousFile": "sons/musica-romantica.mp3",
+    "previousName": "Música romântica",
+    "bytes": 111213,
+    "duration": 6.912,
+    "synchronizedAt": "2026-10-24T19:59:29.015005+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/vitoria.mp3",
+    "id": "builtin:vitoria",
+    "sha256": "f4879f2f8e25cff6034e87717e15910e62f136a1da754482fa430add5b9c6251",
+    "previousSha256": "fc56158258aa41772206232b97bfc4926b9e9172a592713898248eee95e09cd6",
+    "previousFile": "sons/vitoria.mp3",
+    "previousName": "Vitória",
+    "bytes": 91189,
+    "duration": 11.308299,
+    "synchronizedAt": "2026-10-24T19:59:29.015005+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/derrota.mp3",
+    "id": "builtin:derrota",
+    "sha256": "180db1ceb0f05f6dea2fcc3b48b6dd03314d3254738a7a6f6d8b72ce68488dfa",
+    "previousSha256": "c1ecbba706df7bf08bb335d30e04b7334dfab0447bb44f0a2d66084d62066b24",
+    "previousFile": "sons/derrota.mp3",
+    "previousName": "Derrota",
+    "bytes": 47884,
+    "duration": 2.78737,
+    "synchronizedAt": "2026-10-24T19:59:29.015005+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
+  },
+  {
+    "file": "sons/misterio.mp3",
+    "id": "builtin:misterio",
+    "sha256": "9fb3ad2a3ef95c5b68494142d3119f4f5a3525c207a80629bf8f83bbe10f57c3",
+    "previousSha256": "7f9e579e42defa476fc73ea5a983495ae9348d0e1ef001b5ff75047dd0487307",
+    "previousFile": "sons/misterio.mp3",
+    "previousName": "Mistério",
+    "bytes": 65201,
+    "duration": 2.037531,
+    "synchronizedAt": "2026-10-24T19:59:29.015005+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
   }
 ]

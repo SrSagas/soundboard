@@ -94,7 +94,8 @@ export const iconTones={
     "accent": "#C6AE7F"
   },
   "pancada": {
-    "accent": "#8EADC5"
+    "accent": "#C6AE7F",
+    "primary": "#C8D2DD"
   },
   "soco-comico": {
     "accent": "#8EADC5",

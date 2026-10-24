@@ -51,8 +51,8 @@ function mergeRecords(){
   const map=new Map(initial.map(item=>[item.id,{...item}]));
   for(const row of records){
     if(!row||!validId(row.id))continue;
-    const stock=map.get(row.id),icon=migrateIcon(row.icon,stock?.icon||'sino');
-    const item={...(stock||{}),id:row.id,name:cleanName(row.name)||stock?.name||'Efeito sem nome',category:allCategories().some(c=>c.id===row.category)?row.category:'other',
+    const stock=map.get(row.id),icon=migrateIcon(row.icon,stock?.icon||'sino'),savedName=cleanName(row.name);
+    const item={...(stock||{}),id:row.id,name:!row.blob&&stock?.previousNames?.includes(savedName)?stock.name:savedName||stock?.name||'Efeito sem nome',category:allCategories().some(c=>c.id===row.category)?row.category:'other',
       color:validColor(row.color)?row.color:palette[0],icon:iconIds.has(icon)?icon:stock?.icon||'sino',loop:typeof row.loop==='boolean'?row.loop:!!stock?.loop,builtin:!!stock,
       file:stock?.file||'',blob:row.blob instanceof Blob?row.blob:undefined,revision:row.revision||row.updatedAt||row.blob?.size||stock?.sha256,
       duration:row.audioMetadata?.duration||stock?.duration};
@@ -106,20 +106,26 @@ function render(){
   updateCards();
 }
 function updateCards(){
+  const voices=new Map(engine.state.voices.map(voice=>[voice.id,voice]));
   for(const button of $('grid').querySelectorAll('[data-sound-id]')){
-    const active=button.dataset.soundId===engine.state.id;
-    button.dataset.phase=active?engine.state.phase:'idle';
-    button.setAttribute('aria-pressed',String(active&&engine.state.phase==='playing'));
-    button.setAttribute('aria-busy',String(active&&engine.state.phase==='loading'));
+    const id=button.dataset.soundId,voice=voices.get(id),item=getItem(id);
+    if(!item)continue;
+    button.dataset.phase=voice?.phase||(engine.state.error?.id===id?'error':'idle');
+    button.setAttribute('aria-pressed',String(voice?.phase==='playing'));
+    button.setAttribute('aria-busy',String(voice?.phase==='loading'));
+    const action=editing?'Editar ':voice?.phase==='playing'?'Parar ':voice?.phase==='loading'?'Cancelar carregamento de ':item.action?'Acionar ':'Reproduzir ';
+    button.setAttribute('aria-label',action+item.name+(!item.blob&&!item.available&&!item.action?', áudio pendente':''));
   }
 }
 function updatePlayback(state){
   if(!$('playState'))return;
+  const playing=state.voices.filter(voice=>voice.phase==='playing'),loading=state.voices.filter(voice=>voice.phase==='loading');
   $('playState').textContent=({idle:'Pronto',loading:'Carregando',playing:'Tocando',error:'Não reproduzido',interrupted:'Interrompido'})[state.phase]||'Pronto';
-  $('now').textContent=state.name||'Nenhum efeito em reprodução';$('now').title=$('now').textContent;
-  $('playHint').textContent=state.message||(state.phase==='playing'?(state.loop?'Repetição contínua · toque novamente para parar':'Toque novamente para parar'):state.phase==='loading'?'Preparando áudio…':'Toque em um cartão para reproduzir');
+  $('now').textContent=playing.length>1?playing.length+' sons em reprodução':playing[0]?.name||(loading.length>1?loading.length+' sons carregando':loading[0]?.name)||state.name||'Nenhum efeito em reprodução';
+  $('now').title=state.voices.map(voice=>voice.name+(voice.phase==='loading'?' (carregando)':'')).join(', ')||$('now').textContent;
+  $('playHint').textContent=state.message||(state.phase==='playing'?'Toque em outro efeito para misturar. Toque no efeito ativo para parar somente ele. PARAR interrompe todos.':state.phase==='loading'?'Preparando áudio. Toque no mesmo cartão para cancelar somente esse carregamento.':'Toque em um ou mais cartões para reproduzir e misturar sons.');
   document.querySelector('.transport').dataset.phase=state.phase;updateCards();
-  if(state.phase==='error'||state.phase==='interrupted')notice(state.message);
+  if(state.error||state.phase==='interrupted')notice(state.error?.message||state.message);
 }
 function fillIcons(){
   $('soundIcon').replaceChildren();$('iconChoices').replaceChildren();
@@ -148,7 +154,8 @@ function openEditor(item){
   $('fileTip').textContent=item?.blob?'Áudio salvo neste navegador. Escolha um arquivo para substituir.':item?.action?'Este efeito interrompe o áudio sem usar uma faixa. Adicione um arquivo se preferir.':item?.available?'Áudio oficial incluído. Um arquivo escolhido aqui será uma substituição apenas local.':'Selecione um arquivo autorizado para este efeito.';
   $('editor').showModal();
 }
-function closeEditor(){if(saving)return;if(engine.state.id?.startsWith('preview:'))engine.stop();editorSequence++;$('editor').close();}
+function stopPreviews(){for(const voice of engine.state.voices)if(voice.id.startsWith('preview:'))engine.stopVoice(voice.id);}
+function closeEditor(){if(saving)return;stopPreviews();editorSequence++;$('editor').close();}
 async function saveSound(event){
   event.preventDefault();if(saving)return;
   const old=editingId?getItem(editingId):null,name=cleanName($('soundName').value),file=$('soundFile').files[0];
@@ -165,7 +172,7 @@ async function saveSound(event){
     const nextFavorites=favorites.filter(id=>id!==record.id);if(favorite){const oldIndex=favorites.indexOf(record.id);nextFavorites.splice(oldIndex<0?nextFavorites.length:oldIndex,0,record.id);}
     await store.save(record,nextFavorites);
     records=records.filter(r=>r.id!==record.id).concat(record);favorites=nextFavorites;mergeRecords();render();
-    if(engine.state.id?.startsWith('preview:'))engine.stop();$('editor').close();notice('Efeito salvo neste dispositivo.');
+    stopPreviews();$('editor').close();notice('Efeito salvo neste dispositivo.');
   }catch(error){report(error,'editorMessage');}finally{saving=false;$('saveSound').disabled=false;}
 }
 async function preview(){
@@ -181,7 +188,7 @@ async function preview(){
 async function erase(){
   const item=getItem(editingId);if(!item||item.builtin)return;
   if(!confirm('Excluir “'+item.name+'” e seu áudio local? Esta ação não pode ser desfeita sem um backup.'))return;
-  try{const next=favorites.filter(id=>id!==item.id);await store.remove(item.id,next);records=records.filter(r=>r.id!==item.id);favorites=next;if(engine.state.id===item.id)engine.stop();mergeRecords();closeEditor();render();notice('Efeito excluído.');}catch(error){report(error,'editorMessage');}
+  try{const next=favorites.filter(id=>id!==item.id);await store.remove(item.id,next);records=records.filter(r=>r.id!==item.id);favorites=next;engine.stopVoice(item.id);mergeRecords();closeEditor();render();notice('Efeito excluído.');}catch(error){report(error,'editorMessage');}
 }
 async function addCategory(){
   if(creatingCategory)return;
@@ -299,7 +306,7 @@ function bind(){
   $('organize').onclick=()=>{editing=!editing;render();focusCatalog();};$('add').onclick=()=>{$('library').close();openEditor();};$('closeEditor').onclick=closeEditor;
   $('manageSounds').onclick=()=>{$('library').close();editing=true;filter='all';$('categoryFilter').value='all';render();focusCatalog();};
   $('soundColor').oninput=()=>{colorCustomized=true;refreshColorChoices();};$('soundCategory').onchange=()=>{if(!editingId&&!colorCustomized){$('soundColor').value=categoryColors[$('soundCategory').value]||categoryColors.other;refreshColorChoices();}};
-  $('editor').addEventListener('cancel',event=>{event.preventDefault();closeEditor();});$('editor').addEventListener('close',()=>{if(engine.state.id?.startsWith('preview:'))engine.stop();});
+  $('editor').addEventListener('cancel',event=>{event.preventDefault();closeEditor();});$('editor').addEventListener('close',stopPreviews);
   $('soundForm').onsubmit=saveSound;$('preview').onclick=preview;$('deleteSound').onclick=erase;$('addCategory').onclick=addCategory;
   $('soundIcon').onchange=()=>{setCustomIcon('');refreshIconChoices();};$('clearCustomIcon').onclick=()=>setCustomIcon('');
   $('svgFile').onchange=async()=>{const file=$('svgFile').files[0],session=editorSequence;if(!file)return;try{if(file.size>128*1024)throw Error('SVG acima de 128 KB.');const svg=sanitizeSvg(await file.text());if(session!==editorSequence)return;setCustomIcon(svg);$('editorMessage').textContent='Ícone conferido. Será salvo como imagem isolada.';}catch(error){$('svgFile').value='';report(error,'editorMessage');}};

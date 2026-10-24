@@ -40,7 +40,7 @@ Fontes incorporadas localmente: [licenças Lucide/Feather](licencas/ICONES-V13.t
 | Objeto caindo | Desenho próprio v1.3 | Caixa em perspectiva, seta de descida e linha do chão. | 1f2f428e9a666055f921f0cb8ba7b62272d111e7d64ee6ace77bcf72016ab977 |
 | Passos | Lucide Footprints | Duas pegadas completas alternadas. | f8c6b8d59e1f074240e58fd8dfadd16cf713ab32251d8c69b5e46a07257feccf |
 | Chaves | Desenho próprio v1.3 | Par de chaves sobrepostas: duas cabeças e dentes no eixo. | 1ae6e7a82a0feed13a001729444b6262a5d77c94840ca35e80d040d8df8f8ba4 |
-| Pancada | Desenho próprio v1.3 | Estrela irregular de impacto com oito pontas: pancada seca. | 179c035bd6b3246f0fc0477ccd22f2ad12dec709fae91addeed1e3ee0509845f |
+| Carregar arma | Desenho próprio v1.3 | Arma de perfil com empunhadura e guarda-mato; seta sobre o ferrolho indica recarga, sem símbolo de disparo. | 4daddc03f888316959c92deb01fbc80221c588cf7329086c7cdd286cfd4e3b15 |
 | Soco cômico | Phosphor hand-fist (MIT), adaptado à grade 24 | Punho fechado frontal com quatro dedos dobrados e polegar lateral bem separado. | 0a6131e5d44c01bd7c88314e2128f3914e3e5e4228e0b477d953db1d5e3e51e8 |
 | Madeira quebrando | Desenho próprio v1.3 | Duas metades de tábua com bordas quebradas e fibras no sentido vertical. | eaa2406e43ed623caf6ced05c484fdb4678f306bd292c0eb48c70a51daf1271d |
 | Buzina | Desenho próprio v1.3 | Carro visto de frente emitindo duas ondas acústicas laterais de buzina. | d5fb58a038d7fc0240a8da9a412b8d243d3bb63d135f5115b1def6b9fbc76029 |

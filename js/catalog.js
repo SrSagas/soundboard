@@ -15,7 +15,7 @@ const ambient=new Set(['Fogo','Floresta','Vento','Chuva','Tempestade','Escritór
 export const initial=definitions.flatMap(([category,,names],c)=>names.map((sourceName,index)=>{
  const key=slug(sourceName),audio=audioLibrary.find(row=>row.slug===key||row.id==='builtin:'+key);
  const file=audio?.file||audio?.path||'sons/'+key+'.mp3';
- return {id:'builtin:'+key,name:sourceName==='Record scratch'?'Disco arranhando':sourceName,category,icon:key,color:categoryColors[category],builtin:true,
+ return {id:'builtin:'+key,name:sourceName==='Record scratch'?'Disco arranhando':audio?.name||sourceName,previousNames:audio?.previousNames||[],category,icon:key,color:categoryColors[category],builtin:true,
   loop:audio?.loop??ambient.has(sourceName),available:!!audio?.available,file:audio?.available?file+(audio.sha256?'?v='+audio.sha256.slice(0,12):''):'',
   duration:audio?.duration,sha256:audio?.sha256,action:key==='silencio-dramatico'?'stop':undefined,credit:audio};
 }));

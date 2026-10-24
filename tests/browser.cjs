@@ -44,7 +44,17 @@ async function serve(req,res){
     await sino.click();await page.waitForFunction(()=>document.querySelector('#playState').textContent==='Tocando');
     await sino.click();await page.waitForFunction(()=>document.querySelector('#playState').textContent==='Pronto');
     await page.locator('[data-sound-id="builtin:fogo"]').click();await page.waitForFunction(()=>document.querySelector('#playState').textContent==='Tocando');
+    const fire=page.locator('[data-sound-id="builtin:fogo"]'),rain=page.locator('[data-sound-id="builtin:chuva"]');
+    await rain.click();await page.waitForFunction(()=>document.querySelectorAll('[data-phase="playing"][data-sound-id]').length===2,{},{timeout:2000});
+    assert.equal(await fire.getAttribute('aria-pressed'),'true');assert.equal(await rain.getAttribute('aria-pressed'),'true');assert.equal(await page.locator('#now').textContent(),'2 sons em reprodução');
+    await page.locator('#favoritesTab').click();assert.equal(await fire.getAttribute('data-phase'),'playing');await page.locator('#allTab').click();
+    await fire.click();assert.equal(await fire.getAttribute('data-phase'),'idle');assert.equal(await rain.getAttribute('data-phase'),'playing');assert.equal(await rain.getAttribute('aria-label'),'Parar Chuva');
+    await fire.click();await page.waitForFunction(()=>document.querySelectorAll('[data-phase="playing"][data-sound-id]').length===2);
+    await page.locator('#libraryButton').click();await page.locator('#add').click();await page.locator('#soundFile').setInputFiles(path.join(root,'sons','sino.mp3'));await page.locator('#preview').click();await page.waitForFunction(()=>document.querySelector('#now').textContent==='3 sons em reprodução');await page.locator('#closeEditor').click();
+    assert.equal(await fire.getAttribute('data-phase'),'playing');assert.equal(await rain.getAttribute('data-phase'),'playing');assert.equal(await page.locator('#now').textContent(),'2 sons em reprodução');
     await page.getByRole('button',{name:'PARAR',exact:true}).click();await page.waitForFunction(()=>document.querySelector('#playState').textContent==='Pronto');
+    assert.equal(await page.locator('[data-sound-id][data-phase="playing"]').count(),0);
+    await fire.click();await rain.click();await page.waitForFunction(()=>document.querySelectorAll('[data-phase="playing"][data-sound-id]').length===2);await page.locator('[data-sound-id="builtin:silencio-dramatico"]').click();assert.equal(await page.locator('[data-sound-id][data-phase="playing"]').count(),0);
     await page.getByRole('button',{name:'Testar áudio',exact:true}).click();await page.waitForFunction(()=>document.querySelector('#playState').textContent==='Tocando');
     await page.getByRole('button',{name:'PARAR',exact:true}).click();
     await page.locator('#libraryButton').click();
@@ -87,7 +97,13 @@ async function serve(req,res){
     await context.close();context=await chromium.launchPersistentContext(path.join(root,'work','browser-tests'),browserOptions);await context.setOffline(true);
     const restarted=await context.newPage();restarted.on('pageerror',e=>errors.push(e.message));await restarted.goto(base+'/soundboard/');await restarted.waitForSelector('[data-sound-id]');
     await restarted.locator('#allTab').click();await restarted.locator('#search').fill('Efeito editado');await restarted.locator('[data-sound-id]').first().click();await restarted.waitForFunction(()=>document.querySelector('#playState').textContent==='Tocando');
+    await restarted.locator('#stop').click();await restarted.locator('#search').fill('Carregar arma');
+    await restarted.locator('[data-sound-id="builtin:pancada"]').click();await restarted.waitForFunction(()=>document.querySelector('#playState').textContent==='Tocando');
+    await restarted.locator('#stop').click();await restarted.locator('#search').fill('');
+    const offlineFire=restarted.locator('[data-sound-id="builtin:fogo"]'),offlineRain=restarted.locator('[data-sound-id="builtin:chuva"]');
+    await offlineFire.click();await offlineRain.click();await restarted.waitForFunction(()=>document.querySelectorAll('[data-sound-id][data-phase="playing"]').length===2);
+    await offlineFire.click();assert.equal(await offlineRain.getAttribute('data-phase'),'playing');await restarted.locator('#stop').click();assert.equal(await restarted.locator('[data-sound-id][data-phase="playing"]').count(),0);
     assert.deepEqual(errors,[],'Nenhum erro de JavaScript');
-    console.log('PASS: layouts 320/390/768/1440, 72 SVGs, reprodução/toggle/PARAR/repetição, cadastro/edição/substituição/persistência, backup com bytes, importação com cópia, subdiretório, uso offline oficial e personalizado, reinício do navegador sem rede.');
+    console.log('PASS: layouts 320/390/768/1440, 72 SVGs, mistura de loops, parada individual/global, prévia sem interromper a mistura, cadastro/edição/substituição/persistência, backup/importação, subdiretório e mistura offline após reinício do navegador.');
   }finally{await context.close();await new Promise(r=>server.close(r));}
 })().catch(e=>{console.error(e);process.exitCode=1;});
