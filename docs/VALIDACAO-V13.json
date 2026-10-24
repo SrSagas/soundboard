@@ -2,7 +2,7 @@
   "version": "1.3",
   "playbackModel": "simultaneous",
   "protectedFilesCompared": 80,
-  "protectedFilesUnchanged": 40,
+  "protectedFilesUnchanged": 39,
   "intentionalChanges": [
     "js/audio.js",
     "js/audio-library.js",
@@ -10,6 +10,7 @@
     "sons/agua-espirrando.mp3",
     "sons/batidas-na-porta.mp3",
     "sons/buzina.mp3",
+    "sons/campainha.mp3",
     "sons/carro-arrancando.mp3",
     "sons/chuva.mp3",
     "sons/contagem-regressiva.mp3",
@@ -51,8 +52,9 @@
   "externalAudioPending": [],
   "audioFilesCompared": 71,
   "audioFilesMatchingCurrentInventory": 71,
-  "audioFilesMatchingOriginalInventory": 34,
+  "audioFilesMatchingOriginalInventory": 33,
   "userProvidedAudioFiles": [
+    "sons/campainha.mp3",
     "sons/rebobinar.mp3",
     "sons/vaia.mp3",
     "sons/grilos.mp3",

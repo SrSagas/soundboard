@@ -6,6 +6,7 @@ O inventário atual está em `audio-library.json`. As fontes e licenças das gra
 
 | Efeito | Arquivo atual | Duração | SHA-256 |
 |---|---|---|---|
+| Campainha | `sons/campainha.mp3` | 1.032 s | `0331f1fa6a461db083ebf8f40abe0e7ff32debfc55afbf666a4ab3552a777bee` |
 | Rebobinar | `sons/rebobinar.mp3` | 1.224 s | `1de459bb2945b321e5111a5e6232043eb2e94acbaa8cef83fac65165493f4f52` |
 | Vaia | `sons/vaia.mp3` | 3.912 s | `b142d989f6e4d1c25a348384a22865c09933512ff2c10a5a13c390e8fb48f06c` |
 | Grilos | `sons/grilos.mp3` | 9.612 s | `a8013aa0fdb9e38015f1a11b3ad22ad9ccaf91c49a390e2e9cb3b522d2641c2d` |

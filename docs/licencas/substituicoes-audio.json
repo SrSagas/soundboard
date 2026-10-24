@@ -621,5 +621,22 @@
       "sourceProvided": false,
       "redistributionScope": "Não informado"
     }
+  },
+  {
+    "file": "sons/campainha.mp3",
+    "id": "builtin:campainha",
+    "sha256": "0331f1fa6a461db083ebf8f40abe0e7ff32debfc55afbf666a4ab3552a777bee",
+    "previousSha256": "51f56f3548a1344e4c55ca07cd7903eaf6c8b3cc234efe33233ed7b90a2d4172",
+    "previousFile": "sons/campainha.mp3",
+    "previousName": "Campainha",
+    "bytes": 33024,
+    "duration": 1.032,
+    "synchronizedAt": "2026-10-24T21:18:03.696680+00:00",
+    "rights": {
+      "declaration": "O usuário informou que substituiu os arquivos e possui licença de uso de todos.",
+      "declarationDate": "2026-10-24",
+      "sourceProvided": false,
+      "redistributionScope": "Não informado"
+    }
   }
 ]
