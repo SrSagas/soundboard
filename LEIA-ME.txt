@@ -1,0 +1,10 @@
+SOUNDBOARD v1.0 — DEMONSTRAÇÃO
+
+1. Abra index.html no computador para experimentar. Para instalar como aplicativo e trabalhar offline, publique a pasta inteira em HTTPS (por exemplo, GitHub Pages) e abra pelo celular uma primeira vez conectado à internet.
+2. Os seis sons .wav são demonstrações SINTÉTICAS criadas para este protótipo. Eles não são gravações de eventos reais.
+3. Os outros 66 sons possuem botões cadastrados, mas requerem arquivos MP3 próprios. Coloque os arquivos dentro de sons/ com os nomes derivados dos rótulos em minúsculas, sem acento, separados por hífens: por exemplo, porta-abrindo.mp3 e vidro-quebrando.mp3.
+4. Após adicionar MP3s, altere a constante VERSION em sw.js para invalidar o cache antigo. Reabra o site conectado à internet para armazenar os novos arquivos. Sons baixados durante a utilização também ficam em cache; para garantir todos offline, abra os efeitos enquanto houver conexão e confirme seu funcionamento no modo avião.
+5. Para saída externa, conecte o fone ou a caixa Bluetooth no sistema operacional antes de abrir a página. O painel utiliza a saída padrão do sistema. Mudar a saída durante a reprodução depende do dispositivo e navegador.
+6. O volume inicial é 55%, com máximo de 80% do ganho da aplicação. O compressor ajuda a reduzir picos digitais, mas não evita volume excessivo da caixa e não nivela automaticamente arquivos de áudio de origens diferentes. Faça teste prévio em volume baixo.
+7. No celular, mantenha a tela acesa: o projeto interrompe o som quando a página fica oculta para evitar efeitos acidentais.
+8. Para cópias definitivas, verifique autoria, licença e permissão de redistribuição de cada áudio. Não inclua bibliotecas de músicas comerciais em repositório público.
